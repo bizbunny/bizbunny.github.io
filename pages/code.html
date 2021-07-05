@@ -3,6 +3,7 @@
 
 <head>
     <link href="../stylesheets/styles.css" rel="stylesheet">
+    <link href="../stylesheets/stylesCollapseText.css" rel="stylesheet">
     <title>Vi-Anh Nguyen Portfolio</title>
 </head>
 
@@ -10,10 +11,10 @@
     <!--Content-->
     <div class="container">
         <div class="topnav">
-            <div class="dropdown"><a  href="../index.html">Home</a></div>
+            <div class="dropdown"><a  href="../idex.html">Home</a></div>
             <div class="dropdown"><a class="active" href="./code.html">Code</a></div>
             <div class="dropdown"><a href="./art.html">Art</a></div>
-            <div class="dropdown"><a href="#">Resume</a></div>
+            <div class="dropdown"><a href="./resume.html">Resume</a></div>
         </div>
         <div class="body">
             <div class="content">
@@ -26,40 +27,48 @@
                         <p>Computer Science Major with a background in Art</p>
                     </div>
                 </div>
-                <!--First Row-->
                 <div class="rotating">
-                    <h3>Code</h3>
+                    <button type="button" class="collapsible"><h3>Unity Experiments</h3></button><!--First Menu-->
+                    <div class="content-list">
+                        <a href="https://github.com/bizbunny/CursorExperiment1" alt="Cursor Experiment"><p>Cursor Experiment 1</p></a>
+                        <a href="https://github.com/bizbunny/CursorExperiment2" alt="Cursor Experiment"><p>Cursor Experiment 2</p></a>
+                    </div>
+                    <button type="button" class="collapsible"><h3>Web Dev Projects</h3></button><!--Second Menu-->
+                    <div class="content-list">
+                        <a href="https://github.com/bizbunny/ReactPortfolio" alt="Cursor Experiment"><p>React Portfolio</p></a>
+                        <a href="https://github.com/bizbunny/anhcnh" alt="Cursor Experiment"><p>Gaming Photo Gallery</p></a>
+                        <a href="https://github.com/bizbunny/StoreWebsite" alt="Cursor Experiment"><p>Store Website</p></a>
+                    </div>
+                    <button type="button" class="collapsible"><h3>Games</h3></button><!--Third Menu-->
+                    <div class="content-list">
+                        <div class="flex-container">
+                            <a href="https://anh-bizbunny.itch.io/annoy-the-duck" alt="Unity Minigame">
+                                <div class="flex-child left">
+                                    <div class="containerImg">
+                                        <img src="https://img.itch.zone/aW1hZ2UvNzQ3NDQ5LzQyMDg5ODAuanBn/original/1W%2B2c%2B.jpg"
+                                            alt="Unity minigame" class="image" style="width:100%">
+                                        <div class="middle">
+                                            <div class="text">Annoy the Duck</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                            <a href="https://anh-bizbunny.itch.io/spiderwitch" alt="My first time using Renpy">
+                                <div class="flex-child right">
+                                    <div class="containerImg">
+                                        <img src="https://img.itch.zone/aW1hZ2UvNzI5NTQ5LzQwNTM4NjcuanBn/original/aT1VlY.jpg" alt="Renpy Game"
+                                            class="image" style="width:100%">
+                                        <div class="middle">
+                                            <div class="text">Spider Witch</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 
-                <!--Second Row-->
-                <div class="rotating">
-                    <h3>Games</h3>
-                </div>
-                <div class="flex-container">
-                    <a href="https://anh-bizbunny.itch.io/annoy-the-duck" alt="Unity Minigame">
-                        <div class="flex-child left">
-                            <div class="containerImg">
-                                <img src="https://img.itch.zone/aW1hZ2UvNzQ3NDQ5LzQyMDg5ODAuanBn/original/1W%2B2c%2B.jpg"
-                                    alt="Unity minigame" class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">Annoy the Duck</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                
-                    <a href="https://anh-bizbunny.itch.io/spiderwitch" alt="My first time using Renpy">
-                        <div class="flex-child right">
-                            <div class="containerImg">
-                                <img src="https://img.itch.zone/aW1hZ2UvNzI5NTQ5LzQwNTM4NjcuanBn/original/aT1VlY.jpg" alt="Renpy Game"
-                                    class="image" style="width:100%">
-                                <div class="middle">
-                                    <div class="text">Spider Witch</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
                 <!--End of second Row Flex container-->
             </div>
             <!--End of div content-->
@@ -77,9 +86,9 @@
                     <link rel="stylesheet"
                         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                     <!-- Add font awesome icons -->
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-twitter" style="font-size:36px"></a>
+                    <a href ="#" class = "fa fa-instagram" style="font-size:36px"></a>
+                    <a href ="#" class = "fa fa-linkedin" style="font-size:36px"></a>
                 </div>
                 <!--Section-->
             </div>
@@ -87,6 +96,7 @@
     </div>
     <!--Content-->
     <script src="../jsfiles/parallax.js"></script>
+    <script src="../jsfiles/collapsible.js"></script>
 </body>
 
 </html>
