@@ -22,7 +22,7 @@
 /*------------------------------END of header related section------------------------------*/
 /*------------------------------parallaxing section------------------------------*/
 .smolbackground {
-  background: linear-gradient(90deg, #dffeff, #f2dfff, #ffdffd);
+  background: #ffead7;
   position: absolute;
   top: 1;
   right: 100;
@@ -39,7 +39,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
-  /*background-color: #E1578D;*/
+  /*background-color: #e88f3e;*/
 }
 
 /* Style the links inside the navigation bar */
@@ -54,14 +54,16 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ccccff;
-  color: black;
+  background-color: #6fe0da;
+  color: white;
+  border-radius: 5px;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #ffd1e3;
-  color: black;
+  background-color: #e88f3e;
+  color: white;
+  border-radius: 5px;
 }
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
@@ -74,7 +76,7 @@
   /*position: relative;*/
   display: inline-flex;
   overflow: hidden;
-  width: 24%;
+  width: 24.75%;
 }
 
 /* Dropdown Button */
@@ -127,7 +129,7 @@
 /*----------------------Image Stuff------------------------------*/
 .containerImg {
   position: relative;
-  width: 100%;
+  /*width: 100%;*/
 }
 .containerImg:hover .image {
   opacity: 0.3;
@@ -143,14 +145,14 @@
   font-size: 36px;
   padding: 16px 32px;
 }
+.resuméText {
+  text-align: center;
+}
 .image {
   opacity: 1;
-  display: block;
-  width: 100%;
   height: 400px;
   object-fit: cover;
   object-position: 20% 35%;
-  /*height: auto;*/
   transition: 0.5s ease;
   backface-visibility: hidden;
   border-radius: 20px;
@@ -169,20 +171,27 @@
 /*----------------------Flex Stuff------------------------------*/
 .footer {
   display: flex;
+  justify-content: center;
+  background: #ffbf83;
+  border-radius: 5px;
 }
 .flex-container {
   display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+  /*justify-content: space-around;*/
+  margin-top: 25px;
 }
-.flex-child {
+.flex-child{
   flex: 1;
-  text-align: right;
+  /*text-align: right;*/
+  flex-direction: column;
+  margin-right: 20px;
 }
 
 .flex-child:first-child {
-  margin-right: 20px;
-  text-align: left;
+  flex: 1;
+  margin-left: 20px;
+  flex-direction: column;
+  /*text-align: left;*/
 }
 /*----------------------Flex Stuff End ------------------------------*/
 .content {
@@ -199,5 +208,61 @@ body {
   overflow: hidden;
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(90deg, #dffeff, #f2dfff, #ffdffd);
+  background: #ffead7;
 }
+@media screen and (max-width: 1440px){
+  .dropdown {
+    width: 24%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /*----------------------Image Stuff------------------------------*/
+  .image {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /*----------------------Image Stuff------------------------------*/
+    .image {
+      height: 250px;
+    }
+  }
+@media screen and (max-width: 768px) {
+  .dropdown {
+    width: 22%;
+  }
+  /*----------------------Header Stuff-----------------------------*/
+  .header {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  /*----------------------Image Stuff------------------------------*/
+  .text {
+    font-size: 24px;
+  }  
+  .image {
+      height: 200px;
+      border-radius: 10px;
+  }
+}
+@media screen and (max-width: 440px) {
+  /*----------------------Image Stuff------------------------------*/
+    .image {
+      height: 100px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    /*----------------------Header Stuff-----------------------------*/
+    .header {
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+    /*----------------------Image Stuff------------------------------*/
+    .text {
+      font-size: 12px;
+    }
+    .image {
+      height: 80px;
+      border-radius: 5px;
+    }
+  }
