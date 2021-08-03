@@ -11,6 +11,7 @@
 .brandlogo {
   width: 135px;
   border-radius: 50%;
+  /*box-shadow: 4px 4px 20px rgb(211, 202, 202);*/
 }
 .header {
   display: flex;
@@ -50,6 +51,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: 0.3s;
 }
 
 /* Change the color of links on hover */
@@ -74,27 +76,28 @@
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   /*position: relative;*/
-  display: inline-flex;
+  display: inline-block;/*inline-flex*/
   overflow: hidden;
   width: 24%;
 }
 
 /* Dropdown Button */
 .dropdown .dropbtn {
-  background-color: #e1578d;
-  color: white;
+  background-color: #ffead7;
+  color: black;
   padding: 0px;
   outline: none;
   font-size: 16px;
   border: none;
   margin: 0;
+  display: inline-flex;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #e1578d;
+  background-color: #ffead7;
   min-width: inherit;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -103,26 +106,27 @@
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: white;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
+  transition: 0.3s;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ccccff;
+  background-color: #6fe0da;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display:block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #ccccff;
+  background-color: #ffead7;
 }
 
 /*-------------------------END OF DROPDOWN SECTION--------------------------------*/
@@ -209,6 +213,23 @@ body {
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
   background: #ffead7;
+}
+.align-center{
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.regBtn {
+  background-color: #ffbf83;
+  color:white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 5vh;
 }
 @media screen and (max-width: 1440px){
   .dropdown {
