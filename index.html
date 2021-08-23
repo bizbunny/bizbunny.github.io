@@ -3,10 +3,17 @@
   <head>
     <link href="./stylesheets/styles.css" rel="stylesheet">
     <link href="./stylesheets/stylesWithTypingAnimation.css" rel="stylesheet">
+    <link href="./stylesheets/stylesWithLoader.css" rel="stylesheet">
+    <!--BootStrap-->
+    <!--Figure Bootstrap out later-->
+    <!--<link href="./bootstrap-4.3.1/bootstrap-4.3.1/dist/css/bootstrap-grid.min.css" rel="stylesheet">-->
     <title>Vi-Anh Nguyen Portfolio</title>
   </head>
   <body>
-    <!--Content-->
+    <body onload="loadingLoader()" style="margin:0;">
+      <div id="loader"></div>
+      <div style="display:none;" id="mainContent" class="animate-bottom">
+      <!--Content-->
     <div class="container">
       <div class="topnav">
         <div class = "dropdown">
@@ -18,10 +25,11 @@
         <div class = "dropdown">
           <button class="dropbtn"><a href="pages/art.html">Art <i class="fa fa-caret-down"></i></a></button>
           <div class = "dropdown-content">
-            <a href="pages/Art/alien.html">Alien Queen</a>
-            <a href="pages/Art/gojo.html">Gojo Satoru</a>
-            <a href="pages/Art/storm.html">Storm</a>
-            <a href="pages/Art/sophie.html">Sophie</a>
+            <a href="./pages/Art/alien.html">Alien Queen</a>
+            <a  href="./pages/Art/gojo.html">Gojo Satoru</a>
+            <a href="./pages/Art/lantern.html">Lantern</a>
+            <a href="./pages/Art/sophie.html">Sophie</a>
+            <a href="./pages/Art/storm.html">Storm</a>
           </div>
         </div>
         <div class = "dropdown">
@@ -45,42 +53,44 @@
               </div>
             </div><!--End of rotating-->
           </div><!--End of Header-->
-          <!--First Row-->
+         
           <div class="rotating">
-            <h3>Code</h3>
+            <h3>Featured Code</h3>
           </div>  
-          <div class="flex-container">
-            <a href="https://anh-bizbunny.itch.io/annoy-the-duck" alt="Unity Minigame">
-              <div class="flex-child">
-                <div class="containerImg">
-                  <img src="https://img.itch.zone/aW1hZ2UvNzQ3NDQ5LzQyMDg5ODAuanBn/original/1W%2B2c%2B.jpg" alt="Unity minigame" class="image" style="width:100%">
-                  <div class="middle">
-                    <div class="text">Annoy the Duck</div>
+          <div class="container-fluid">
+             <!--First Row-->
+            <div class="row">
+              <a href="https://anh-bizbunny.itch.io/annoy-the-duck" alt="Unity Minigame">
+                <div class="col col-md-6 col-sm-12">
+                  <div class="containerImg">
+                    <img src="https://img.itch.zone/aW1hZ2UvNzQ3NDQ5LzQyMDg5ODAuanBn/original/1W%2B2c%2B.jpg" alt="Unity minigame" class="image" style="object-position: 20% 45%;">
+                    <div class="middle">
+                      <div class="text">Annoy the Duck</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-
-            <a href="https://anh-bizbunny.itch.io/spiderwitch" alt="My first time using Renpy">
-              <div class="flex-child">
-                <div class="containerImg">
-                  <img src="https://img.itch.zone/aW1hZ2UvNzI5NTQ5LzQwNTM4NjcuanBn/original/aT1VlY.jpg" alt="Renpy Game" class="image" style="width:100%">
-                  <div class="middle">
-                    <div class="text">Spider Witch</div>
-                  </div>
-                </div>  
-              </div>
-            </a>
-          </div> 
-          <!--Second Row-->
+              </a>
+  
+              <a href="https://bizbunny.github.io/anhcnh/" alt="Early foray into designing a website">
+                <div class="col col-md-6 col-sm-12">
+                  <div class="containerImg">
+                    <img src="./static/images/screenshot.png" alt="Photo Website" class="image">
+                    <div class="middle">
+                      <div class="text">Gaming Screenshots Website</div>
+                    </div>
+                  </div>  
+                </div>
+              </a>
+            </div>
+             <!--Second Row-->
           <div class="rotating">
-            <h3>Art</h3>
+            <h3>Featured Art</h3>
           </div> 
-          <div class="flex-container">
+          <div class="row">
             <a href="https://twitter.com/anh_bizbunny/status/1405194025993490446?s=20" alt="featured in tweet">
-              <div class="flex-child">
+              <div class="col col-md-6 col-sm-12">
                 <div class="containerImg">
-                  <img src="https://pbs.twimg.com/media/E4BAgjaVkAEg8fY?format=jpg&name=4096x4096" alt="Storm" class="image" style="width:100%">
+                  <img src="https://pbs.twimg.com/media/E4BAgjaVkAEg8fY?format=jpg&name=4096x4096" alt="Storm" class="image">
                   <div class="middle">
                     <div class="text">Storm</div>
                   </div>
@@ -89,17 +99,21 @@
             </a>
 
             <a href="https://twitter.com/anh_bizbunny/status/1377831940791894023?s=20" alt="featured in tweet">
+              <div class="col col-md-6 col-sm-12">
                 <div class="containerImg">
-                  <img src="https://pbs.twimg.com/media/Ex8KylgW8AIY_Eo?format=jpg&name=large" alt="ALien" class="image" style="width:100%">
+                  <img src="https://pbs.twimg.com/media/E9cGx4iX0AAKWAW?format=jpg&name=4096x4096" alt="ALien" class="image" style="object-position: 20% 10%;">
                   <div class="middle">
-                    <div class="text">Alien Queen</div>
+                    <div class="text">Lantern</div>
                   </div>
-                </div>  
+                </div><!--End of div containerImg-->
               </div>
             </a>
-          </div><!--End of second Row Flex container--> 
-        </div><!--End of div content-->
-      </div><!--End of div body-->
+          </div>
+          </div> 
+         
+          </div><!--End of div content--> 
+        </div><!--End of div body-->
+      </div><!--End of div container-->
       <div class="footer">
         <div class="flex-child 1">
           <div class="text" style="color: white;">Social</div>
@@ -121,8 +135,13 @@
         </div>
       </div>
     </div>
+    </div>
     <!--Content-->
     <script src="JSfiles/parallax.js"></script>
     <script src="jsfiles/typingAnimation.js"></script>
+    <script src="jsfiles/loader.js"></script>
+    <!--BootStrap-->
+    <!--Figure Bootstrap out later-->
+    <!--<script src="bootstrap-4.3.1/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>-->
   </body>
 </html>
