@@ -4,6 +4,8 @@
 <head>
     <link href="../stylesheets/styles.css" rel="stylesheet">
     <link href="../stylesheets/stylesWithTypingAnimation.css" rel="stylesheet">
+    <!--BootStrap-->
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" rel="stylesheet">-->
     <title>Vi-Anh Nguyen Portfolio</title>
 </head>
 
@@ -21,9 +23,10 @@
             <button class="dropbtn"><a class="active" href="./art.html">Art <i class="fa fa-caret-down"></i></a></button>
             <div class = "dropdown-content">
               <a href="./Art/alien.html">Alien Queen</a>
-              <a href="./Art/gojo.html">Gojo Satoru</a>
-              <a href="./Art/storm.html">Storm</a>
+              <a  href="./Art/gojo.html">Gojo Satoru</a>
+              <a href="./Art/lantern.html">Lantern</a>
               <a href="./Art/sophie.html">Sophie</a>
+              <a href="./Art/storm.html">Storm</a>
             </div>
           </div>
           <div class = "dropdown">
@@ -51,56 +54,71 @@
                 <div class="rotating">
                     <h3>Illustration</h3>
                 </div>
-                
-                <!--Second Row-->
-                <div class="flex-container">
+                <div class="container-fluid">
+                  <!--Second Row-->
+                  <div class="row">
                     <a href="./Art/storm.html" alt="Storm">
-                      <div class="flex-child">
+                      <div class="col col-md-6 col-sm-12">
                         <div class="containerImg">
-                          <img src="https://pbs.twimg.com/media/E4BAgjaVkAEg8fY?format=jpg&name=4096x4096" alt="Storm" class="image" style="width:100%">
+                          <img src="https://pbs.twimg.com/media/E4BAgjaVkAEg8fY?format=jpg&name=4096x4096" alt="Storm" class="image">
                           <div class="middle">
                             <div class="text">Storm</div>
                           </div>
                         </div>
                       </div>
                     </a>
-        
-                    <a href="./Art/alien.html" alt="Alien Queen">
+                    <a href="./Art/lantern.html" alt="Lantern">
+                      <div class="col col-md-6 col-sm-12">
                         <div class="containerImg">
-                          <img src="https://pbs.twimg.com/media/Ex8KylgW8AIY_Eo?format=jpg&name=large" alt="ALien" class="image" style="width:100%">
+                          <img src="https://pbs.twimg.com/media/E9cGx4iX0AAKWAW?format=jpg&name=4096x4096" alt="ALien" class="image" style="object-position: 20% 10%;">
                           <div class="middle">
-                            <div class="text">Alien Queen</div>
+                            <div class="text">Lantern</div>
                           </div>
-                        </div>  
+                        </div><!--End of div containerImg-->
+                      </div>
                     </a>
-                </div><!--End of Flex container-->
+                </div><!--End of row-->
                 <!--End of Second Row-->
                 <!--Third Row-->
-                <div class="flex-container">
+                <div class="row">
                   <a href="./Art/gojo.html" alt="Further Explanation">
-                    <div class="flex-child">
+                    <div class="col col-md-6 col-sm-12">
                       <div class="containerImg">
-                        <img src="https://pbs.twimg.com/media/E6B9qGkXsAE-oOF?format=jpg&name=4096x4096" alt="Gojo" class="image" style="width:100%">
+                        <img src="https://pbs.twimg.com/media/E6B9qGkXsAE-oOF?format=jpg&name=4096x4096" alt="Gojo" class="image">
                         <div class="middle">
                           <div class="text">Gojo Satoru</div>
                         </div>
                       </div>
                     </div>
                   </a>
-                  <a href="./Art/sophie.html" alt="character art">
-                      <div class="containerImg">
-                        <img src="https://pbs.twimg.com/media/Ex8ITcfXEAE5bL3?format=jpg&name=large" alt="Sophie" class="image" style="width:100%">
-                        <div class="middle">
-                          <div class="text">Sophie Cyclops</div>
+                    <a href="./Art/sophie.html" alt="character art">
+                      <div class="col col-md-6 col-sm-12">
+                        <div class="containerImg">
+                          <img src="https://pbs.twimg.com/media/Ex8ITcfXEAE5bL3?format=jpg&name=large" alt="Sophie" class="image" style="object-position: 20% 3%;">
+                          <div class="middle">
+                            <div class="text">Sophie Cyclops</div>
+                          </div>
                         </div>
                       </div>
-                  </a>
-              </div><!--End of Flex container-->
-              <!--End of Third Row-->
-            </div><!--End of content-->
-          </div><!--End of div body-->
-    </div>
-        <!--End of div Container-->
+                    </a>
+                  </div><!--End of row-->
+                  <div class="row">
+                    <a href="./Art/alien.html" alt="Alien Queen">
+                      <div class="col col-md-6 col-sm-12">
+                        <div class="containerImg">
+                          <img src="https://pbs.twimg.com/media/Ex8KylgW8AIY_Eo?format=jpg&name=large" alt="Alien" class="image" style="object-position: 20% 10%;">
+                          <div class="middle">
+                            <div class="text">Alien Queen</div>
+                          </div>
+                        </div>  
+                      </div>
+                    </a>
+                  </div>
+                  <!--End of Third Row-->
+                </div><!--End of container-fluid-->
+              </div><!--End of content-->
+            </div><!--End of div body-->
+          </div><!--End of div Container-->
         <div class="footer">
             <div class="flex-child 1">
               <div class="text" style="color: white;">Social</div>
@@ -126,6 +144,10 @@
     <!--Content-->
     <script src="../jsfiles/parallax.js"></script>
     <script src="../jsfiles/typingAnimation.js"></script>
+    <!--BootStrap-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
 </body>
 
 </html>
