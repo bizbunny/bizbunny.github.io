@@ -154,9 +154,9 @@
 }
 .image {
   opacity: 1;
-  height: 400px;
+  height: 400px;/* 
   object-fit: cover;
-  object-position: 20% 35%;
+  object-position: 20% 35%; */
   transition: 0.5s ease;
   backface-visibility: hidden;
   border-radius: 20px;
