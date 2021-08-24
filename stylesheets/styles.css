@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-.container {
+.containerOfContent {
   height: 90vh;
   width: 99vw;
   display: grid;
   grid-template-columns: 1fr;
   /*grid-template-rows: 30px 1fr 30px;*/
-  margin: auto;
+  margin: 0px;
 }
 /*------------------------------header related section------------------------------*/
 .brandlogo {
