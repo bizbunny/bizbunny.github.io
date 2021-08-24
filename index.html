@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head>    
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Other Styles-->
     <link href="./stylesheets/styles.css" rel="stylesheet">
     <link href="./stylesheets/stylesWithTypingAnimation.css" rel="stylesheet">
-    <link href="./stylesheets/stylesWithLoader.css" rel="stylesheet">
-    <!--BootStrap-->
-    <!--Figure Bootstrap out later-->
-    <!--<link href="./bootstrap-4.3.1/bootstrap-4.3.1/dist/css/bootstrap-grid.min.css" rel="stylesheet">-->
     <title>Vi-Anh Nguyen Portfolio</title>
   </head>
   <body>
-    <body onload="loadingLoader()" style="margin:0;">
+    <!-- <body onload="loadingLoader()" style="margin:0;">
       <div id="loader"></div>
-      <div style="display:none;" id="mainContent" class="animate-bottom">
+      <div style="display:none;" id="mainContent" class="animate-bottom"> -->
       <!--Content-->
     <div class="container">
       <div class="topnav">
@@ -43,7 +42,7 @@
             <div class="rotating">
                 <img src="https://pbs.twimg.com/profile_images/1343646540167061516/sGC-b4g-_400x400.jpg"
                     class="brandlogo" alt="logo">
-                <h1>Vi-Anh Nguyen</h1>
+                <h1><b>Vi-Anh Nguyen</b></h1>
                 <div class="container-animation">
                   <div class="text_hide"></div>
                   <!----------------------------->
@@ -87,7 +86,7 @@
             <h3>Featured Art</h3>
           </div> 
           <div class="row">
-            <a href="https://twitter.com/anh_bizbunny/status/1405194025993490446?s=20" alt="featured in tweet">
+            <a href="./pages/Art/storm.html" alt="Storm">
               <div class="col col-md-6 col-sm-12">
                 <div class="containerImg">
                   <img src="https://pbs.twimg.com/media/E4BAgjaVkAEg8fY?format=jpg&name=4096x4096" alt="Storm" class="image">
@@ -98,7 +97,7 @@
               </div>
             </a>
 
-            <a href="https://twitter.com/anh_bizbunny/status/1377831940791894023?s=20" alt="featured in tweet">
+            <a href="./pages/Art/lantern.html" alt="featured in tweet">
               <div class="col col-md-6 col-sm-12">
                 <div class="containerImg">
                   <img src="https://pbs.twimg.com/media/E9cGx4iX0AAKWAW?format=jpg&name=4096x4096" alt="ALien" class="image" style="object-position: 20% 10%;">
@@ -137,11 +136,14 @@
     </div>
     </div>
     <!--Content-->
+    
+    <!--BootStrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Other JS-->
     <script src="JSfiles/parallax.js"></script>
     <script src="jsfiles/typingAnimation.js"></script>
-    <script src="jsfiles/loader.js"></script>
-    <!--BootStrap-->
-    <!--Figure Bootstrap out later-->
-    <!--<script src="bootstrap-4.3.1/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>-->
+    <!-- <script src="jsfiles/loader.js"></script> -->
   </body>
 </html>
