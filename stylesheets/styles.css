@@ -132,8 +132,12 @@
 /*-------------------------END OF DROPDOWN SECTION--------------------------------*/
 /*----------------------Image Stuff------------------------------*/
 .containerImg {
-  position: relative;
-  /*width: 100%;*/
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  /*position: relative;
+  width: 100%;*/
 }
 .containerImg:hover .image {
   opacity: 0.3;
@@ -152,14 +156,17 @@
 .resuméText {
   text-align: center;
 }
+img{
+  max-width:100%;
+}
 .image {
-  opacity: 1;
-  height: 400px;/* 
+  opacity: 1;/*
+  height: 400px; 
   object-fit: cover;
   object-position: 20% 35%; */
   transition: 0.5s ease;
   backface-visibility: hidden;
-  border-radius: 20px;
+  /*border-radius: 20px;*/
 }
 .middle {
   transition: 0.5s ease;
