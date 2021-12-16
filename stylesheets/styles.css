@@ -135,8 +135,8 @@
   overflow: hidden;
   height: 400px;
   width: 100%;
-  border-radius: 10px;
-  /*position: relative;
+  /*border-radius: 10px;
+  position: relative;
   width: 100%;*/
 }
 .containerImg:hover .image {
@@ -243,28 +243,15 @@ body {
     width: 24%;
   }
 }
-@media screen and (max-width: 1280px) {
-  /*----------------------Image Stuff------------------------------*/
-  .image {
-    height: 300px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  /*----------------------Image Stuff------------------------------*/
-    .image {
-      height: 250px;
-    }
-  }
+/*
 @media screen and (max-width: 768px) {
   .dropdown {
     width: 22%;
   }
-  /*----------------------Header Stuff-----------------------------*/
   .header {
     margin-top: 10vh;
     margin-bottom: 10vh;
   }
-  /*----------------------Image Stuff------------------------------*/
   .text {
     font-size: 24px;
   }  
@@ -273,12 +260,8 @@ body {
       border-radius: 10px;
   }
 }
-@media screen and (max-width: 440px) {
-  /*----------------------Image Stuff------------------------------*/
-    .image {
-      height: 100px;
-    }
-  }
+*/
+
   @media screen and (max-width: 320px) {
     /*----------------------Header Stuff-----------------------------*/
     .header {
@@ -288,9 +271,5 @@ body {
     /*----------------------Image Stuff------------------------------*/
     .text {
       font-size: 12px;
-    }
-    .image {
-      height: 80px;
-      border-radius: 5px;
     }
   }
