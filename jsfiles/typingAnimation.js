@@ -13,7 +13,7 @@ function typing_animation() {
 
     let timings = {
         easing: `steps(${Number(word_len[0] + 1)}, end)`,
-        delay: 1200,
+        delay: 900,
         duration: 2000,
         fill: 'forwards'
     }
