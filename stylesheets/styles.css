@@ -4,6 +4,7 @@
 .brandlogo {
   width: 135px;
   border-radius: 50%;
+  margin: 0 0 0 0;
   /*box-shadow: 4px 4px 20px rgb(211, 202, 202);*/
 }
 .header {
@@ -29,25 +30,75 @@
   transition: inherit;
 }
 /*------------------------------END of parallaxing section------------------------------*/
-/*------------------------------top nav section------------------------------*/
-
-/*------------------------------end of topnav section------------------------------*/
-/*------------------------DROPDOWN SECTION---------------------------------*/
-
-/*-------------------------END OF DROPDOWN SECTION--------------------------------*/
+/*------------------------------nav section------------------------------*/
+.navbar{
+  background-color: #ffb777;
+  margin: 0 0;
+  padding: 1em 1em;
+  border: none;
+}
+.nav {
+  padding: 0 4rem;
+}
+.navbar-brand{
+  font-size: 2ch;
+}
+.active li {
+  background-color: #ff851b;
+  display: flex;
+  justify-content: center;
+}
+/*------------------------------end of nav section------------------------------*/
+/*------------------------PROJECT GRID SECTION---------------------------------*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #f0937b;
+}
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#project-grid {
+  margin: 5rem 0rem;
+}
+#project-grid-item {
+  background-color: #e5c0b7;
+  height: 36rem;
+  width: 50%;
+  padding: 0 0;
+}
+#project-grid-item:hover .overlay {
+  opacity: 0.7;
+}
+.project-grid-item-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/*-------------------------END OF PROJECT GRID SECTION--------------------------------*/
 /*----------------------Image Stuff------------------------------*/
 
 /*----------------------Image Stuff END------------------------------*/
 /*----------------------Flex Stuff------------------------------*/
 
 /*----------------------Flex Stuff End ------------------------------*/
-.content {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding: 40px;
-}
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
   background: #ffead7;
