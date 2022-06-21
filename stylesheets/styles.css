@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
 /*------------------------------header related section------------------------------*/
 .brandlogo {
   width: 135px;
@@ -32,7 +31,7 @@
 /*------------------------------END of parallaxing section------------------------------*/
 /*------------------------------nav section------------------------------*/
 .navbar{
-  background-color: #ffb777;
+  background-color: #ffad66;
   margin: 0 0;
   padding: 1em 1em;
   border: none;
@@ -44,7 +43,7 @@
   font-size: 2ch;
 }
 .active li {
-  background-color: #ff851b;
+  background-color: #f0aa7b;
   display: flex;
   justify-content: center;
 }
@@ -60,10 +59,10 @@
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #f0937b;
+  background-color: #f0aa7b;
 }
 .overlay-text {
-  color: white;
+  color: #ecf0f1;
   font-size: 2em;
   position: absolute;
   top: 50%;
