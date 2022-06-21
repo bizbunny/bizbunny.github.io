@@ -106,4 +106,13 @@ h3{
   text-align: center;
   margin: 1em 0;
 }
+/*----------------------Profile Image Stuff------------------------------*/
+.profileImage{
+  border-radius: 20px;
+  margin-top: 8em;
+  width: 350px;
+}
+.profileImagePosition{
+  text-align: center;
+}
 

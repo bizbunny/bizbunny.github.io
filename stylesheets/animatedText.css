@@ -163,6 +163,12 @@
     top: 110%;
   }
 }
+@media screen and (max-width: 768px){
+  .content-animated {
+    line-height: 45px;
+  }
+  /*Needs to be more responsive*/
+}
 @media screen and (max-width: 275px){
   .content-animated {
     top: 120%;
