@@ -106,13 +106,32 @@ h3{
   text-align: center;
   margin: 1em 0;
 }
+.paragraphPositioning{
+  margin: 20px 30px;
+}
+.snapshot_placing{
+  display: flex;
+  justify-content: center;
+}
+.snapshot{
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin: 0 10px;
+}
 /*----------------------Profile Image Stuff------------------------------*/
 .profileImage{
   border-radius: 20px;
-  margin-top: 8em;
+  margin-top: 40px;
   width: 350px;
 }
 .profileImagePosition{
   text-align: center;
 }
-
+/*----------------------END OF Profile Image Stuff------------------------------*/
+@media screen and (max-width: 1024px){
+  .profileImage{
+    margin-top: 4em;
+  }
+}
