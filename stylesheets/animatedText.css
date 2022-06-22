@@ -1,7 +1,7 @@
 /*Got this from Twitter @YoannHELIN's codepen that I forked*/
 .content-animated {
   position: absolute;
-  top: 115%;
+  top: 75%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -158,20 +158,10 @@
             transform: translate3d(0, -20%, 0);
   }
 }
-@media screen and (max-width: 1024px){
-  .content-animated {
-    top: 90%;
-  }
-}
 @media screen and (max-width: 768px){
   .content-animated {
     line-height: 45px;
   }
   /*Needs to be more responsive*/
-}
-@media screen and (max-width: 275px){
-  .content-animated {
-    top: 120%;
-  }
 }
 /*# sourceMappingURL=animatedText.css.map */
