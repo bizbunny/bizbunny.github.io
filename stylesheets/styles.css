@@ -62,7 +62,7 @@
   background-color: #f0aa7b;
 }
 .overlay-text {
-  color: #ecf0f1;
+  color: #ffffff;
   font-size: 2em;
   position: absolute;
   top: 50%;
@@ -82,12 +82,25 @@
   padding: 0 0;
 }
 #project-grid-item:hover .overlay {
-  opacity: 0.7;
+  opacity: 0.75;
+  transform: scale(1.25);
 }
 .project-grid-item-img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  transition: transform 2s; 
+  
+}
+/* .project-grid-item-img:hover{
+  transform: scale(1.15);
+} */
+.proj-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
 }
 /*-------------------------END OF PROJECT GRID SECTION--------------------------------*/
 /*----------------------DROP DOWN Stuff------------------------------*/
@@ -106,9 +119,28 @@ h3{
   text-align: center;
   margin: 1em 0;
 }
+h5{
+  text-align: center;
+  margin: 1em 0;
+}
+.regBtn {
+  background-color: #ffbf83;
+  color:white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-flex;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 5vh;
+}
+.align-center{
+  text-align: center;
+}
 .paragraphPositioning{
   margin: 20px 30px;
 }
+/*----------------------Snap Shot Stuff------------------------------*/
 .snapshot_placing{
   display: flex;
   justify-content: center;
@@ -120,6 +152,7 @@ h3{
   object-fit: cover;
   margin: 0 10px;
 }
+/*----------------------END OF Snap Shot Stuff------------------------------*/
 /*----------------------Profile Image Stuff------------------------------*/
 .profileImage{
   border-radius: 20px;
