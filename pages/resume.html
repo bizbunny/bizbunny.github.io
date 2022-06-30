@@ -1,164 +1,240 @@
 <!DOCTYPE html>
 <html>
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <!-- links to bootstrap CDN:
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow”
+      integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+  
+    link to bootstrap styling
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
-<head>
+    <!--Nav Style-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Other Styles-->
     <link href="../stylesheets/styles.css" rel="stylesheet">
-    <link href="../stylesheets/stylesTimeline.css" rel="stylesheet">
     <link href="../stylesheets/stylesWithTypingAnimation.css" rel="stylesheet">
+    <link href="../stylesheets/animatedText.css" rel="stylesheet">
+
+    <link href="../stylesheets/stylesTimeline.css" rel="stylesheet">
+
+    <!--For social icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+
     <title>Vi-Anh Nguyen Portfolio</title>
-</head>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <!-- <a class="navbar-brand active" aria-current="page" href="./index.html">Home</a> -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#Code">Code</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" 
+                 id="navbarDropdownMenuLink" role="button" 
+                 data-toggle="dropdown" aria-expanded="false">Art</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="../index.html#characterart">Character Art</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../index.html#Illustration">Illustration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./about.html">About</a>
+            </li>
+            <li class="nav-item dropdown ml-auto">
+              <a class="nav-link active"  href="./resume.html">
+                Resumé
+              </a>           
+            </li>
+          </ul>
+        </div>
+    </nav>
 
-<body>
-    <!--Page Content-->
-    <div class="containerOfContent">
-        <div class="topnav">
-            <div class = "dropdown">
-                <button class="dropbtn"><a  href="../index.html">Home</a></button>
-              </div>
-              <div class = "dropdown">
-                <button class="dropbtn"><a href="./code.html">Code</a></button>
-              </div>
-              <div class = "dropdown">
-                <button class="dropbtn"><a href="./art.html">Art <i class="fa fa-caret-down"></i></a></button>
-                <div class = "dropdown-content">
-                    <a href="./Art/alien.html">Alien Queen</a>
-                    <a  href="./Art/gojo.html">Gojo Satoru</a>
-                    <a href="./Art/lantern.html">Lantern</a>
-                    <a href="./Art/sophie.html">Sophie</a>
-                    <a href="./Art/storm.html">Storm</a>
-                </div>
-              </div>
-              <div class = "dropdown">
-                <button class="dropbtn"><a class="active" href="./resume.html">Resumé</a></button>
-              </div>
-        </div>
-        <div class="body">
-            <div class="content">
-                <div class="header">
-                    <div class="smolbackground"></div>
-                    <div class="rotating">
-                        <img src="https://pbs.twimg.com/profile_images/1343646540167061516/sGC-b4g-_400x400.jpg"
-                            class="brandlogo" alt="logo">
-                        <h1>Vi-Anh Nguyen</h1>
-                        <div class="container-animation">
-                            <div class="text_hide"></div>
-                            <!----------------------------->
-                            <div class="text-anim">Computer Science Major with an Art Background</div>
-                            <!----------------------------->
-                            <div class="text_cursor"></div>
-                        </div>
-                    </div><!--end of rotating-->
-                </div><!--end of header-->
-                <!--First Row-->
-                <div class="rotating">
-                    <h3>Work History</h3>
-                </div>
+    </nav>
+      <!--Content-->
+          <!--Header stuff-->
+          <div class="header">
+            <div class="smolbackground"></div>
+            <div class="rotating">
+              <img src="https://pbs.twimg.com/profile_images/1343646540167061516/sGC-b4g-_400x400.jpg"
+                class="brandlogo" alt="logo">
+                <h1><b>Vi-Anh Nguyen</b></h1>
+                <div class="container-animation">
+                  <div class="text_hide"></div>
+                  <!----------------------------->
+                  <div class="text-anim">Coding and Art</div>
+                  <!----------------------------->
+                  <div class="text_cursor"></div>
+                </div><!--End of container-animation-->
+                <h6>Student currently studying in Chicago</h6>
+            </div><!--End of rotating-->
+          </div><!--End of header-->
+          <!--END OF Header stuff-->
+          <h3>CV</h3>
+
+          <!--CV STUFF-->
+          <div id="cv" class="row">
+            <div class="col">
+              <!--skills-->
+              <div id="skills">
+                <h5>Skills</h5>
+                <div class="paragraphPositioning">
+                  <h6>
+                    <b>Primary</b>: HTML, CSS, SQL, React.js, Gatsby, Java, Python, C#, Microsoft Word, Microsoft Powerpoint
+                  </h6>
+                  <h6>
+                    <b>Design</b>: Adobe Photoshop, Adobe Illustrator
+                  </h6>
+                  <h6>
+                    <b>Language</b>: French Fluency,Vietnamese Fluency
+                  </h6>
+                </div><!--<div class="paragraphPositioning">-->
+              </div><!--<div id="skills">-->
+              <!--end of skills-->
+              <hr class="divider">
+              <!--work experience-->
+              <div id="work-xp">
+                <h5>Work Experience</h5>
+
+                <div class="paragraphPositioning">
+                  <div id="superworld">
+                    <h6>
+                        <b>SuperWorld</b>
+                        Remote Frontend Developer Intern JAN 2021 - JUN 2021
+                    </h6>
+                    <ul>
+                        <li>Help develop responsive website and web applications according to
+                        designs from the UX team.</li>
+                        <li>Help Optimize according to specifications of product manager and
+                        lead developer.</li>
+                    </ul>
+                  </div>
+                  <div id="CCM">
+                    <h6>
+                      <b>Chicago Children's Museum</b>
+                      Volunteer SEPT 2019 - JAN 2020
+                    </h6>
+                    <ul>
+                      <li>Assist workers in needed facilities for monthly programs</li>
+                      <li>Help ensure kids and families have a great experience at the museum</li>
+                    </ul>
+                  </div>
+                  <div id="Uniqlo">
+                    <h6>
+                      <b>Uniqlo</b>
+                      Sales Associate SEPT 2019 - NOV 2019
+                    </h6>
+                    <ul>
+                      <li>Help customers with purchases and store experience</li>
+                      <li>Handle cash register</li>
+                    </ul>
+                  </div>
+                  <div id="HappyMercs">
+                    <h6>
+                      <b>Happy Mercs</b>
+                      Remote Animation Intern OCT 2018 - JAN 2019
+                    </h6>
+                    <ul>
+                      <li>Critiqued panel improvements and creative proposals from director</li>
+                      <li>Animated and touched up motion comic and helped finish rendering panels as needed according to designated project style for the company’s first animated trailer</li>
+                    </ul>
+                  </div>
+                  <div id="SaffronRed">
+                    <h6>
+                      <b>Saffron Red</b>
+                      Sales Associate JUN 2015 - DEC 2017
+                    </h6>
+                    <ul>
+                      <li>Greet Customers</li>
+                      <li>Assisted in maintenance of inventory and stock</li>
+                      <li>Helped manage appearance of store</li>
+                    </ul>
+                  </div>
+                </div><!--<div class="paragraphPositioning">-->
+
+              </div><!--<div id="work-xp">-->
+              <!--end of work experience-->
+              <hr class="divider">
+              <!--education-->
+              <div id="education">
+                <h5>Education</h5>
+
+                <div class="paragraphPositioning">
+                  <div>
+                    <h6>
+                        DePaul University, Chicago — M.S. <br/>
+                        SEPT 2019 - MAR 2023 <br/>
+                        Computer Science with a Human Computer Interaction Concentration
+                    </h6>
+                  </div>
+                  <div>
+                      <h6>
+                          Columbia College, Chicago — B.A. <br/>
+                          SEPT 2015 - DEC 2018 <br/>
+                          Cinema Arts and Sciences with an Animation Concentration Trustee Award Recipient
+                      </h6>
+                  </div>
+                </div><!--<div class="paragraphPositioning">-->
                 
-                <!--Second Row-->
-                <div class="timeline">
-                    <div class="container-Time left">
-                        <!---------------------------------Block--------------------------------->
-                        <div class="content-Time">
-                            <h4>Web Development Intern</h4>
-                            <h6>SuperWorld</h6>
-                            <p>January 2021 - June 2021</p>
-                        </div>
-                    </div>
-                    <div class="container-Time right">
-                        <!---------------------------------Block--------------------------------->
-                        <div class="content-Time">
-                            <h4>Volunteer</h4>
-                            <h6>Chicago Children's Museum</h6>
-                            <p>April 2019 - February 2020</p>
-                        </div>
-                    </div>
-                    <div class="container-Time left">
-                        <!---------------------------------Block--------------------------------->
-                        <div class="content-Time">
-                            <h4>Sales Associate</h4>
-                            <h6>Uniqlo</h6>
-                            <p>July 2019 - October 2019</p>
-                        </div>
-                    </div>
-                    <div class="container-Time right">
-                        <!---------------------------------Block--------------------------------->
-                        <div class="content-Time">
-                            <h4>Remote Animation Intern</h4>
-                            <h6>Happy Mercs</h6>
-                            <p>October 2018 - January 2019</p>
-                        </div>
-                    </div>
-                </div><!--End of timeline--> 
-                <!--Third Row-->
-                <div class="rotating">
-                    <h3>Skills</h3>
-                </div>
+              </div>
+              <!--end of education-->
+              <hr class="divider">
+               <!--relevant coursework-->
+               <div id="rel-cw">
+                <h5>Relavent Coursework</h5>
+
+                <div class="paragraphPositioning">
+
+                  <div>
+                    <h6>
+                        <ul>
+                            <li>Introduction to Programming</li>
+                            <li>Discrete Math</li>
+                            <li>Applied Algorithms</li>
+                            <li>Data Structures</li>
+                            <li>Distributed Systems</li>
+                            <li>Systems</li>
+                            <li>Information Architectures</li>
+                            <li>Mobile Application Development for IOS</li>
+                            <li>Mobile Application Development for Android</li>
+                        </ul>
+                      </h6>
+                  </div>
+
+                </div><!--<div class="paragraphPositioning">-->
                 
-                <!--Fourth Row-->
-                <div class="flex-container" style="margin-left: 30px;">
-                    <div class="flex-child 1">
-                        <p><b>Programming / Markup</b></p>
-                        <p>C#</p>
-                        <p>Java</p>
-                        <p>Python</p>
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>React</p>
-                    </div>
-                    <div class="flex-child 2">
-                        <p><b>Art Software</b></p>
-                        <p>Adobe Photoshop</p>
-                        <p>Adobe Illustration</p>
-                    </div>
-                    <div class="flex-child 3">
-                        <p><b>Languages</b></p>
-                        <p>French</p>
-                        <p>English</p>
-                    </div>
-                    
-                </div><!--End of Fourth Row Flex container--> 
-                <!--Fifth Row-->
-                <div class="rotating">
-                    <h3>Education</h3>
-                </div>
-                
-                <!--Sixth Row-->
-                <div class="resuméText">
-                    <b>DePaul University</b> : Computer Science Master's Degree | Expected Graduation Year : 2023
-                </div><!--End of Sixth Row Flex container--> 
-                <div class="resuméText">
-                    <b>Columbia College Chicago</b> : Cinema Arts and Science Bachelors Degree
-                </div>
-            </div>
-            <!--End of div content-->
-        </div>
-        <!--End of div body-->
+              </div>
+              <!--end of relevant coursework-->
+            </div><!--<div class="col">-->
+          </div><!--<div id="cv" class="row">-->
+          <!--End of CV STUFF-->
+
     </div>
-    <!--End of Page Content-->
-    <!--end of containerOfContent-->
-    <div class="footer">
-        <div class="flex-child 1">
-            <div class="text" style="color: white;">Social</div>
-        </div>
-        <div class="flex-child 2">
-            <!--Section-->
-            <div class="topnav">
-                <!-- Social media-->
-                <!-- Add icon library -->
-                <link rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <!-- Add font awesome icons -->
-                <a href="https://twitter.com/anh_bizbunny" class = "fa fa-twitter" style="font-size:36px; color:white"></a>
-                <a href ="https://www.instagram.com/anh_bizbunny/" class = "fa fa-instagram" style="font-size:36px; color:white"></a>
-                <a href ="linkedin.com/in/vi-anh-nguyen-7a5698103" class = "fa fa-linkedin" style="font-size:36px; color:white"></a>
-                <a href ="https://github.com/bizbunny" class = "fa fa-github" style="font-size:36px; color:white"></a>
-                <a href="https://codepen.io/anh_bizbunny" class = "fa fa-codepen" style="font-size:36px; color:white"></a>
-            </div>
-            <!--Section-->
-        </div>
-    </div>
-    <script src="../jsfiles/parallax.js"></script>
+    <!--Content-->
+    
+    <!--BootStrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Other JS-->
+    <script src="../JSfiles/parallax.js"></script>
     <script src="../jsfiles/typingAnimation.js"></script>
-</body>
-
+    <!-- <script src="jsfiles/loader.js"></script> -->
+    <!--For Nav-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>

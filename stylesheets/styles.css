@@ -108,6 +108,12 @@
   background-color: #ffead7;
   border-style: none;
 }
+.dropdown-item{
+  display: block;
+}
+.dropdown-item-active{
+  background-color: #e88f3e;
+}
 /*----------------------DROP DOWN Stuff END------------------------------*/
 body {
   overflow-x: hidden;
@@ -140,6 +146,22 @@ h5{
 .paragraphPositioning{
   margin: 20px 30px;
 }
+/*----------------------CV and Resumé Stuff------------------------------*/
+#cv {
+  /* width: 90rem; */
+  margin: auto auto;
+  padding: auto auto;
+}
+#work-xp{
+  font-size: medium;
+}
+hr.divider {
+  border-top: 1px solid black;
+ border-bottom: 0px;
+ width: 75%;
+ margin: 40px auto;
+}
+/*----------------------END OF CV and Resumé Stuff------------------------------*/
 /*----------------------Snap Shot Stuff------------------------------*/
 .snapshot_placing{
   display: flex;
@@ -151,6 +173,9 @@ h5{
   height: 350px;
   object-fit: cover;
   margin: 0 10px;
+}
+.snapshot:hover{
+  opacity: 0.7;
 }
 /*----------------------END OF Snap Shot Stuff------------------------------*/
 /*----------------------Profile Image Stuff------------------------------*/
