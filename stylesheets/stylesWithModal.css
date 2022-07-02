@@ -1,6 +1,9 @@
 .myImages {
-    width: 50vw;
+    width: 33vw;
     border-radius: 15px;
+}
+.myMiscImages {
+  width: 100%;
 }
 /* Style the Image Used to Trigger the Modal */
 #myImg {
@@ -16,7 +19,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding: 100px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */

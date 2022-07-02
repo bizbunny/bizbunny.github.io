@@ -1,113 +1,130 @@
 <!DOCTYPE html>
 <html>
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <!-- links to bootstrap CDN:
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow”
+      integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+  
+    link to bootstrap styling
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
-<head>
+    <!--Nav Style-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Other Styles-->
     <link href="../../stylesheets/styles.css" rel="stylesheet">
-    <link href="../../stylesheets/stylesWithModal.css" rel="stylesheet">
     <link href="../../stylesheets/stylesWithTypingAnimation.css" rel="stylesheet">
     <title>Vi-Anh Nguyen Portfolio</title>
-</head>
-
-<body oncontextmenu="return false;">
-    <!--Content-->
-    <div class="containerOfContent">
-        <div class="topnav">
-            <div class = "dropdown">
-                <button class="dropbtn"><a  href="../../index.html">Home</a></button>
-              </div>
-              <div class = "dropdown">
-                <button class="dropbtn"><a href="../code.html">Code</a></button>
-              </div>
-              <div class = "dropdown">
-                <button class="dropbtn"><a  href="../art.html">Art <i class="fa fa-caret-down"></i></a></button>
-                <div class = "dropdown-content">
-                    <a href="./alien.html">Alien Queen</a>
-                    <a  href="./gojo.html">Gojo Satoru</a>
-                    <a href="./lantern.html">Lantern</a>
-                    <a href="./sophie.html">Sophie</a>
-                    <a class="active" href="./storm.html">Storm</a>
-                </div>
-              </div>
-              <div class = "dropdown">
-                <button class="dropbtn"><a href="../resume.html">Resumé</a></button>
-              </div>
+  </head>
+  <body class="d-flex flex-column min-vh-100" oncontextmenu="return false;">
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <!-- <a class="navbar-brand" href="../../index.html">Home</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Home</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html#Code">Code</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" 
+                 id="navbarDropdownMenuLink" role="button" 
+                 data-toggle="dropdown" aria-expanded="false">Art</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="../../index.html#characterart">Character Art</a>
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="../../index.html#Illustration">Illustration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+            <li class="nav-item dropdown ml-auto">
+              <a class="nav-link"  href="../resume.html">
+                Resumé
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="body">
-            <div class="content">
-                <div class="header" id="topOfPage">
-                    <div class="smolbackground"></div>
-                    <div class="rotating">
-                        <img src="https://pbs.twimg.com/profile_images/1343646540167061516/sGC-b4g-_400x400.jpg"
-                            class="brandlogo" alt="logo">
-                        <h1>Vi-Anh Nguyen</h1>
-                        <div class="container-animation">
-                            <div class="text_hide"></div>
-                            <!----------------------------->
-                            <div class="text-anim">Computer Science Major with an Art Background</div>
-                            <!----------------------------->
-                            <div class="text_cursor"></div>
-                        </div>
-                    </div><!--end of rotating-->
-                </div><!--end of header-->
-                <!--First Row-->
-                <div class="rotating">
-                    <h3>Storm</h3>
-                    <div class="text">One of my favorite characters from Marvel's X-Men. I was inspired by old movie posters, so I made this rendition of Storm in her Hellfire Gala look.</div>
-                    <img src="https://pbs.twimg.com/media/E4BAgjaVkAEg8fY?format=jpg&name=4096x4096" alt="Storm" class="myImages" id="myImg">
-                    <h5>Process</h5>
-                    <img src="../../static/images/Storm/Storm-Sketch.png" alt="sketch" class="myImages" id="myImg">
-                    <img src="../../static/images/Storm/Storm.jpg" class="myImages" id="myImg">
-                    <img src="../../static/images/Storm/StormSketchMod.png" class="myImages" id="myImg">
-                    <img src="../../static/images/Storm/Storm-Base.png" class="myImages" id="myImg">
-                    <img src="../../static/images/Storm/Storm-Base2.png" class="myImages" id="myImg">
-                    <img src="../../static/images/Storm/Storm-Base3.png" class="myImages" id="myImg">
-                    <img src="../../static/images/Storm/Storm-Base4.png" class="myImages" id="myImg">
-                    <img src="../../static/images/Storm/Storm-Base5.png" class="myImages" id="myImg">
-                    <img src="../../static/images/Storm/StormGala.png" class="myImages" id="myImg">
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
+    </nav>
+
+      <!--Content-->
+          <!--Header stuff-->
+          <div class="header" id="topOfPage">
+            <div class="smolbackground"></div>
+            <div class="rotating">
+              <img src="https://pbs.twimg.com/profile_images/1343646540167061516/sGC-b4g-_400x400.jpg"
+                class="brandlogo" alt="logo">
+                <h1><b>Vi-Anh Nguyen</b></h1>
+                <div class="container-animation">
+                  <div class="text_hide"></div>
+                  <!----------------------------->
+                  <div class="text-anim">I do Coding and Art</div>
+                  <!----------------------------->
+                  <div class="text_cursor"></div>
+                </div><!--End of container-animation-->
+                <h6>Email me at vianhnguyen17@gmail.com for questions</h6>
+            </div><!--End of rotating-->
+        </div><!--End of header-->
+        <!--END OF Header stuff-->
+        <div class="align-center" style="margin-bottom: 100px;">
+            <h1>Storm</h1>
+            <p>One of my favorite characters from Marvel's X-Men. I was inspired by old movie posters, so I made this rendition of Storm in her 2021 Hellfire Gala look.</p>
+        </div>
+        <h3>Process</h3>
+        <div class="align-center">
+            <p>I started with a sketching in my sketchbook.</p>
+        </div>
+        <img src="../../static/images/Storm/Storm-Sketch.png" alt="sketch">
+        <div class="align-center">
+            <p>Then I hardened the sketch with color pencil.</p>
+        </div>
+        <img src="../../static/images/Storm/Storm.jpg">
+        <div class="align-center">
+            <p>After taking a photo of the sketch and putting it into my computer, using Photoshop, I did some adjustments to Storm's profile to make her profile more accurate to a black woman's. This was a mistake I only noticed after hardening the sketch.</p>
+        </div>
+        <img src="../../static/images/Storm/StormSketchMod.png">
+        <div class="align-center">
+            <p>I then turned the sketch into an overlay layer. I wanted the piece to have some texture along with being fairly lineless, so I used a textured brush to color block in the lines and shapes and adding in some light shading around her neck and chin. I didn't do limited color schemes too often, so I remeember that was why I focused on using mainly primary colors.</p>
+        </div>
+        <img src="../../static/images/Storm/Storm-Base2.png">
+        <div class="align-center">
+            <p>Some gradient was added to the background and lightning bolt.</p>
+        </div>
+        <img src="../../static/images/Storm/Storm-Base3.png">
+        <div class="align-center">
+            <p>Some extra lines were added on her skin. More lighter colors were added to her lips, and yellow and yellow gradients were added to the underside of Storm's neck. I also added a bit more definition to her cheek bones.</p>
+        </div>
+        <img src="../../static/images/Storm/Storm-Base5.png">
+        <div class="align-center">
+            <p>Lastly I removed the sketch overlay.</p>
+        </div>
+        <img src="../../static/images/Storm/StormGala.png">
+        <div class="align-center">
+            <div class="regBtn"><a href="#topOfPage">Back To Top</a></div>
+        </div>
+    </div>
+    <!--Content-->
     
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                    
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                    
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div><!--End of Modal Stuff-->
-                </div>
-                <div class="align-center"><div class="regBtn"><a href="#topOfPage">Back To Top</a></div></div>
-            </div><!--End of content-->
-        </div><!--End of div body-->
-    </div>
-        <!--End of div Container-->
-        <div class="footer">
-            <div class="flex-child 1">
-              <div class="text" style="color: white;">Social</div>
-            </div>
-            <div class="flex-child 2">
-                <!--Section-->
-                <div class="topnav">
-                    <!-- Social media-->
-                    <!-- Add icon library -->
-                    <link rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                    <!-- Add font awesome icons -->
-                    <a href="https://twitter.com/anh_bizbunny" class = "fa fa-twitter" style="font-size:36px; color:white"></a>
-                    <a href ="https://www.instagram.com/anh_bizbunny/" class = "fa fa-instagram" style="font-size:36px; color:white"></a>
-                    <a href ="linkedin.com/in/vi-anh-nguyen-7a5698103" class = "fa fa-linkedin" style="font-size:36px; color:white"></a>
-                    <a href ="https://github.com/bizbunny" class = "fa fa-github" style="font-size:36px; color:white"></a>
-                    <a href="https://codepen.io/anh_bizbunny" class = "fa fa-codepen" style="font-size:36px; color:white"></a>
-                </div>
-                <!--Section-->
-            </div>
-        </div>
-    </div>
-    <!--Content-->
-    <script src="../../jsfiles/parallax.js"></script>
-    <script src="../../jsfiles/modal.js"></script>
+    <!--BootStrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Other JS-->
+    <script src="../../JSfiles/parallax.js"></script>
     <script src="../../jsfiles/typingAnimation.js"></script>
-</body>
-
+    <!-- <script src="jsfiles/loader.js"></script> -->
+    <script src="../../jsfiles/modal.js"></script>
+    <!--For Nav-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>
