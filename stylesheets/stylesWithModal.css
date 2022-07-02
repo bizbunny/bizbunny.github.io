@@ -2,6 +2,9 @@
     width: 33vw;
     border-radius: 15px;
 }
+.myMiscImages {
+  width: 100%;
+}
 /* Style the Image Used to Trigger the Modal */
 #myImg {
     border-radius: 5px;
