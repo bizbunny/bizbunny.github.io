@@ -158,10 +158,25 @@
             transform: translate3d(0, -20%, 0);
   }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1280px){
   .content-animated {
-    line-height: 45px;
+    line-height: -2vh;
   }
   /*Needs to be more responsive*/
+}
+@media screen and (max-width: 414px){
+  .content-animated {
+    line-height: 5vh;
+  }
+  /*Needs to be more responsive*/
+}
+@media screen and (max-width: 375px){
+  .content-animated {
+    line-height: -10vh!;
+  }
+  /*Needs to be more responsive*/
+  .content-animated__container:after, .content-animated__container:before {
+    line-height: 30px;
+  }
 }
 /*# sourceMappingURL=animatedText.css.map */
