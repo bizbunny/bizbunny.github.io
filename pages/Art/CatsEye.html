@@ -18,10 +18,10 @@
     <link href="../../stylesheets/stylesWithTypingAnimation.css" rel="stylesheet">
     <title>Vi-Anh Nguyen Portfolio</title>
   </head>
-  <body class="d-flex flex-column min-vh-100">
+  <body class="d-flex flex-column min-vh-100" oncontextmenu="return false;">
     <nav class="navbar navbar-expand-sm navbar-dark">
         <!-- <a class="navbar-brand" href="../../index.html">Home</a> -->
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -30,15 +30,15 @@
               <a class="nav-link" href="../../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../index.html#Code">Code</a>
+              <a class="nav-link" href="../../index.html#Code">Code</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" 
+              <a class="nav-link dropdown-toggle active" href="#" 
                  id="navbarDropdownMenuLink" role="button" 
                  data-toggle="dropdown" aria-expanded="false">Art</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li>
-                  <a class="dropdown-item" href="../../index.html#characterart">Character Art</a>
+                  <a class="dropdown-item active" href="../../index.html#characterart">Character Art</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="../../index.html#Illustration">Illustration</a>
@@ -56,11 +56,9 @@
           </ul>
         </div>
     </nav>
-
-    </nav>
       <!--Content-->
           <!--Header stuff-->
-          <div class="header">
+          <div class="header" id="topOfPage">
             <div class="smolbackground"></div>
             <div class="rotating">
               <img src="../../static/images/NEW-UPDATED-logo.jpg"
@@ -77,16 +75,15 @@
             </div><!--End of rotating-->
           </div><!--End of header-->
           <!--END OF Header stuff-->
-          <h3>Animal Crossing Photo Gallery</h3>
-          <div class="snapshot_placing">
-            <a href="https://github.com/bizbunny/anhcnh" alt="link to gallery website's github">
-              <img src="../../static/images/project_snapshots/acnhsnapshot.png" class="snapshot" alt="github project snapshot"/>
-            </a>
-            <a href="https://bizbunny.github.io/anhcnh/" alt="link to gallery website">
-              <img src="../../static/images/screenshot.png" class="snapshot" alt="project snapshot"/>
-            </a>
+          <h3>Cat's Eye</h3>
+          <div class="paragraphPositioning"><p>A character I designed over the 2022 summer, taking my love of American superhero comics and Japanese manga. I call him Cat's Eye</p></div>
+          <img src="../../static/images/Makoto Cat Eyes.png" alt="character showcase">
+          
+          <div class="align-center">
+            <div class="regBtn">
+              <a href="#topOfPage">Back To Top</a>
+            </div>
           </div>
-          <p class="paragraphPositioning">This is one of my first attempts at a cleaner more responsive website. I decided to make about something I like, Animal Crossing New Horizon, one of my favorite games.</p>
     </div>
     <!--Content-->
     
@@ -97,6 +94,7 @@
     <script src="../../JSfiles/parallax.js"></script>
     <script src="../../jsfiles/typingAnimation.js"></script>
     <!-- <script src="jsfiles/loader.js"></script> -->
+    <script src="../../jsfiles/modal.js"></script>
     <!--For Nav-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
