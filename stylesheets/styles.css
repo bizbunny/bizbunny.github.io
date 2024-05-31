@@ -230,10 +230,8 @@ hr.divider {
     }
   }
 }
-tr{
-  .discover{
-    background-color: #95D2F4;
-  }
+.discover{
+  background-color: #95D2F4;
 }
 /*----------------------Table Stuff------------------------------*/
 @media screen and (max-width: 1024px) {
