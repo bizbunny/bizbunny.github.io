@@ -233,6 +233,9 @@ hr.divider {
 .discover{
   background-color: #95D2F4;
 }
+.municipal{
+  background-color: #CF95F4;
+}
 /*----------------------Table Stuff------------------------------*/
 @media screen and (max-width: 1024px) {
   .profileImage {
