@@ -199,6 +199,7 @@ hr.divider {
 /*----------------------Table Stuff------------------------------*/
 .table-fixed {
   width: 100%;
+  height: 100%;
   background-color: #f3f3f3;
 
   tbody {
@@ -235,6 +236,15 @@ hr.divider {
 }
 .municipal{
   background-color: #CF95F4;
+}
+.citizen{
+  background-color: #F495D1;
+}
+.culture{
+  background-color: #95F4A7;
+}
+.economics{
+  background-color: #CCCACA;
 }
 /*----------------------Table Stuff------------------------------*/
 @media screen and (max-width: 1024px) {
