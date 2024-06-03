@@ -212,7 +212,7 @@ hr.divider {
   th {
     display: block;
     border-collapse: collapse;
-    float: left;
+    float: center;
     border-color: #f3f3f3;
   }
 }
