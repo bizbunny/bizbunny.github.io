@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-css": "^4.0.0-alpha.5",
+    "bootstrap.min.js": "^3.3.5",
+    "isotope": "^1.0.0-alpha.3",
+    "jquery": "^3.7.1",
+    "jquery.min.js": "^3.5.1"
+  }
+}
