@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="./stylesheets/styles.css" rel="stylesheet">
+    
+    <link href="./stylesheets/projectgridstyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css-->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark" id="primary_nav_wrap">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="button-list navbar-nav w-100">
+            <li class="button active nav-item" data-filter="all"><div type="button" class="Btn" name="all" title="All">
+              <a class="nav-link" aria-current="page" href="#">All</a></div>
+            </li>
+            <li class="button nav-item" data-filter="even"><div type="button" class="Btn" name="even" title="Even">
+              <a class="nav-link" aria-current="page" href="#">Even</a></div>
+            </li>
+            <li class="button nav-item" data-filter="odd"><div type="button" class="Btn" name="odd" title="Odd">
+              <a class="nav-link" aria-current="page" href="#">Odd</a></div>
+            </li>
+            <li class="button nav-item" data-filter="divisibleBy3"><div type="button" class="Btn" name="divisibleBy3" title="Divisible by 3">
+              <a class="nav-link" aria-current="page" href="#">Divisible by 3</a></div>
+            </li>
+            <li class="button nav-item" data-filter="divisibleBy4"><div type="button" class="Btn" name="divisibleBy4" title="Divisible by 4">
+              <a class="nav-link" aria-current="page" href="#">Divisible by 4</a></div>
+            </li>
+            <!--Full Btns-------------------------------------------------------------------------------------------->
+            <li class="button nav-item" data-filter="code"><div type="button" class="Btn" name="code" title="Code" >
+              <a class="nav-link" href="#">Code</a></div>
+            </li>
+            <li class="button nav-item" data-filter="ux"><div type="button" class="Btn" name="ux" title="UX">
+              <a class="nav-link" href="#">UX</a></div>
+            </li>
+            <li class="button nav-item" data-filter="art"><div type="button" class="Btn" name="art" title="Art">
+              <a class="nav-link" href="#">Art</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+    <!--Project Grid--><div class="container__numbers">
+    <div id="project-grid">
+        <div class="row">
+          <div id="project-grid-item" class="box filter odd name col-lg-6 col-md-6 mb-12 mb-md-0 ">
+            <a href="#">
+             <img class="project-grid-item-img" src="https://img.itch.zone/aW1hZ2UvNzI5NTQ5LzQwNTM4NjkuanBn/original/XXH8S5.jpg" alt="time to talk"/>
+            </a>
+            <div class="overlay">
+              <div class="overlay-text">Game1</div>
+            </div>
+            </div>
+          <div id="project-grid-item" class="box filter even name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img class="project-grid-item-img" src="https://pbs.twimg.com/media/FQGNyyhXIAkKirs?format=jpg&name=large" alt="Cartridge Collector" />
+            </a>
+            <div class="overlay">
+              <div class="overlay-text">Game2</div>
+            </div>
+          </div>
+          <div id="project-grid-item" class="box filter odd divisibleBy3 name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img  class="project-grid-item-img" src="https://img.itch.zone/aW1hZ2UvNzQ3NDQ5LzQyMDg5ODAuanBn/original/1W%2B2c%2B.jpg" alt="Twitter Bookmarks" />
+            </a>
+            <div class="overlay">
+              <div class="overlay-text">Game3</div>
+            </div>
+          </div>
+          <div id="project-grid-item" class="box filter even divisibleBy4 name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#"><img  class="project-grid-item-img" src="https://img.itch.zone/aW1hZ2UvNzI5NTQ5LzQwNTM4NjkuanBn/original/XXH8S5.jpg" alt="carrd.co clone"></a>
+            <div class="overlay">
+              <div class="overlay-text">Game4</div>
+            </div>
+          </div>
+          <div id="project-grid-item" class="box filter odd name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+             <img class="project-grid-item-img" src="https://img.itch.zone/aW1hZ2UvNzI5NTQ5LzQwNTM4NjkuanBn/original/XXH8S5.jpg" alt="time to talk"/>
+            </a>
+            <div class="overlay">
+              <div class="overlay-text">Game5</div>
+            </div>
+          </div>
+          <div id="project-grid-item" class="box filter even divisibleBy3 name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img class="project-grid-item-img" src="https://pbs.twimg.com/media/FQGNyyhXIAkKirs?format=jpg&name=large" alt="Cartridge Collector" />
+            </a>
+            <div class="overlay">
+              <div class="overlay-text">Game6</div>
+            </div>
+          </div>
+          <div id="project-grid-item" class="box filter odd name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img  class="project-grid-item-img" src="https://img.itch.zone/aW1hZ2UvNzQ3NDQ5LzQyMDg5ODAuanBn/original/1W%2B2c%2B.jpg" alt="Twitter Bookmarks" />
+            </a>
+            <div class="overlay">
+              <div class="overlay-text">Game7</div>
+            </div>
+          </div>
+          <div id="project-grid-item" class="box filter even divisibleBy4 name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#"><img  class="project-grid-item-img" src="https://img.itch.zone/aW1hZ2UvNzI5NTQ5LzQwNTM4NjkuanBn/original/XXH8S5.jpg" alt="carrd.co clone"></a>
+            <div class="overlay">
+              <div class="overlay-text">Game8</div>
+            </div>
+          </div>
+          <!--Full Btns-------------------------------------------------------------------------------------------->
+          <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#"><img  class="project-grid-item-img" src="./static/images/screenshot.png" alt="carrd.co clone"></a>
+            <div class="overlay">
+              <div class="overlay-text">Animal Crossing Gallery</div>
+            </div>
+          </div>
+          <div id="project-grid-item" class="box filter ux name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#"><img  class="project-grid-item-img" src="./static/images/pexels-picjumbo-com-55570-196644.jpg" alt="carrd.co clone"></a>
+            <div class="overlay">
+              <div class="overlay-text">Rouyn Noranda Case Study</div>
+            </div>
+          </div>
+          <div id="project-grid-item" class="box filter art characterart name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#"><img  class="project-grid-item-img" src="https://pbs.twimg.com/media/FVVw-QXWUAAVCW0?format=jpg&name=4096x4096" alt="carrd.co clone"></a>
+            <div class="overlay">
+              <div class="overlay-text">Sophie Cyclops</div>
+            </div>
+          </div>
+          <div id="project-grid-item" class="box filter art illustration name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#"><img  class="project-grid-item-img" src="https://pbs.twimg.com/media/FWri9xFXEAIVjXu?format=jpg&name=4096x4096" alt="carrd.co clone"></a>
+            <div class="overlay">
+              <div class="overlay-text">Miscellaneous Art</div>
+            </div>
+          </div>
+
+          <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img  class="project-grid-item-img" src="./static/images/screenshot6.png" alt="Codepen Experiments"/>
+              <div class="overlay">
+                <div class="overlay-text">Codepen Experiments</div>
+              </div>
+            </a>
+        </div><!--project-grid-item-->
+        <div id="project-grid-item" class="box filter ux name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img class="project-grid-item-img" src="./static/images/pexels-picjumbo-com-55570-196644.jpg"
+                alt="Rouyn Noranda" />
+              <div class="overlay">
+                <div class="overlay-text">Rouyn Noranda Case Study</div>
+              </div>
+            </a>
+        </div>
+        <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img class="project-grid-item-img" src="https://pbs.twimg.com/media/FVVw-QXWUAAVCW0?format=jpg&name=4096x4096" alt="Sophie Cyclops "/>
+              <div class="overlay">
+                <div class="overlay-text">Sophie Cyclops</div>
+              </div>
+            </a>
+        </div>
+        <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img class="project-grid-item-img" src="./static/images/Makoto Cat Eyes.png" alt="Cat's Eye"/>
+              <div class="overlay">
+                <div class="overlay-text">Cat's Eye</div>
+              </div>
+            </a>
+        </div>
+        <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img class="project-grid-item-img" src="https://pbs.twimg.com/media/Ex8KylgW8AIY_Eo?format=jpg&name=large" alt="Alien Queen"/>
+              <div class="overlay">
+                <div class="overlay-text">Alien Queen</div>
+              </div>
+            </a>
+        </div><!--project-grid-item-->
+        <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img class="project-grid-item-img" src="./static/images/Storm/StormGala.png" alt="Storm"/>
+              <div class="overlay">
+                <div class="overlay-text">Storm</div>
+              </div>
+            </a>
+        </div>
+        <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img class="project-grid-item-img" src="https://pbs.twimg.com/media/FO3aybVXwAQfx6S?format=jpg&name=medium" alt="Vector Art"/>
+              <div class="overlay">
+                <div class="overlay-text">Vector Art</div>
+              </div>
+            </a>
+        </div><!--project-grid-item-->
+        <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">
+            <a href="#">
+              <img class="project-grid-item-img" src="https://pbs.twimg.com/media/FWri9xFXEAIVjXu?format=jpg&name=4096x4096" alt="Miscellaneous Art"/>
+              <div class="overlay">
+                <div class="overlay-text">Miscellaneous Art</div>
+              </div>
+            </a>
+        </div><!--project-grid-item-->    
+
+        </div>
+      </div></div>
+    <!--End of Project Grid-->
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--BootStrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="./jsfiles/animationSort.js"></script>
+  </body>
+</html>
