@@ -1,113 +1,115 @@
 <!DOCTYPE html>
 <html>
   <head>    
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  
-    <!-- links to bootstrap CDN:
-    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow”
-      integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
-  
-    link to bootstrap styling
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
     <!--Nav Style-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--Other Styles-->
     <link href="./stylesheets/styles.css" rel="stylesheet">
+    <link href="./stylesheets/projectgridstyles.css" rel="stylesheet">
     <link href="./stylesheets/stylesWithTypingAnimation.css" rel="stylesheet">
     <link href="./stylesheets/stickyfooter.css" rel="stylesheet">
-
+    <link href="./stylesheets/darkModeStyles.css" rel="stylesheet">
     <title>Vi-Anh Nguyen Portfolio</title>
   </head>
-  <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-sm navbar-dark">
-        <!-- <a class="navbar-brand active" aria-current="page" href="./index.html">Home</a> -->
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark" id="primary_nav_wrap">
+      <div class="container-fluid">  
+      <!-- <a class="navbar-brand active" aria-current="page" href="./index.html">Home</a> -->
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav w-100">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          <ul class="button-list navbar-nav w-100">
+            <li class="button active nav-item" data-filter="all"><div type="button" class="Btn" name="all" title="All">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a></div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Code">Code</a>
+            <li class="button nav-item" data-filter="code"><div type="button" class="Btn" name="code" title="Code" >
+              <a class="nav-link" href="#">Code</a></div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#UX">UX</a>
+            <li class="button nav-item" data-filter="ux"><div type="button" class="Btn" name="ux" title="UX">
+              <a class="nav-link" href="#">UX</a></div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" 
-                 id="navbarDropdownMenuLink" role="button" 
-                 data-toggle="dropdown" aria-expanded="false">Art</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li>
-                  <a class="dropdown-item" href="#characterart">Character Art</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#Illustration">Illustration</a>
-                </li>
-              </ul>
+            <li class="button nav-item" data-filter="art"><div type="button" class="Btn" name="art" title="Art">
+              <a class="nav-link" href="#">Art</a></div>
             </li>
-            <li class="nav-item">
+            <li class="button nav-item">
               <a class="nav-link" href="./pages/about.html">About</a>
             </li>
-            <li class="nav-item ml-auto">
+            <li class="button nav-item">
               <a class="nav-link"  href="./pages/resume.html">
                 Resumé
               </a>           
             </li>
+            <!-- <li class="button nav-item ml-auto">
+              <ul class="navbar-nav">
+                <li onclick="toggleBG()">
+                  <button class="toggleClass" id="togglemodebtn"><a href="#">Dark Mode</a>
+                  </button>             
+                  </li>
+              </ul>
+            </li> -->
           </ul>
         </div>
+      </div>
     </nav>
 
-      <!--Content-->
-          <!--Header stuff-->
-          <div class="header">
-            <div class="smolbackground"></div>
-            <div class="rotating">
-              <img src="./static/images/bunnyLogoUPDATED.jpeg"
-                class="brandlogo" alt="logo">
-                <h1><b>Vi-Anh Nguyen</b></h1>
-                <div class="container-animation">
-                  <div class="text_hide"></div>
-                  <!----------------------------->
-                  <div class="text-anim">I do Coding and Art</div>
-                  <!----------------------------->
-                  <div class="text_cursor"></div>
-                </div><!--End of container-animation-->
-                <h6>Email me at vianhnguyen17@gmail.com for questions</h6>
-            </div><!--End of rotating-->
-          </div><!--End of header-->
-          <!--END OF Header stuff-->
+<!--Header stuff-->
+<div class="header">
+  <div class="smolbackground"></div>
+  <div class="rotating">
+    <img src="./static/images/bunnyLogoUPDATED.jpeg"
+      class="brandlogo" alt="logo">
+      <h1><b>Vi-Anh Nguyen</b></h1>
+      <div class="container-animation">
+        <div class="text_hide"></div>
+        <!----------------------------->
+        <div class="text-anim">I do Coding and Art</div>
+        <!----------------------------->
+        <div class="text_cursor"></div>
+      </div><!--End of container-animation-->
+      <h6>Email me at vianhnguyen17@gmail.com for questions</h6>
+  </div><!--End of rotating-->
+</div><!--End of header-->
+<!--END OF Header stuff-->
 
-          <!--Project Grid-->
+    <svg id="enx1SpitGw91" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+      <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 96 199.207161)" fill="#ffad66" stroke-width="0"/>
+      <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 863.999998 199.207161)" fill="#ffad66" stroke-width="0"/>
+      <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 1439.999997 199.207161)" fill="#ffad66" stroke-width="0"/>
+      <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 1631.999997 199.207161)" fill="#ffad66" stroke-width="0"/>
+      <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 1823.999997 199.207161)" fill="#ffad66" stroke-width="0"/>
+      <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 1247.999997 199.207161)" fill="#ffad66" stroke-width="0"/>
+      <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 1055.999997 199.207161)" fill="#ffad66" stroke-width="0"/>
+      <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 287.999999 199.207161)" fill="#ffad66" stroke-width="0"/>
+      <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 671.999999 199.207161)" fill="#ffad66" stroke-width="0"/>
+      <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 479.999999 199.207161)" fill="#ffad66" stroke-width="0"/>
+      <rect width="1708.592232" height="137.549311" rx="0" ry="0" transform="matrix(1.123732 0 0 1.454024 0.000001 0.000007)" fill="#ffad66" stroke-width="0"/>
+ </svg>
+      <!--Content-->
+          
+
+          <!--Project Grid--><div class="container__numbers">
           <div id="project-grid">
-            <h3>Code</h3>
             <div class="row">
-              <div id="Code"></div><!--Bookmark-->
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">
-                <div class="proj-container">
+              <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
                   <a href="./pages/Code/animalcrossinggallery.html">
                     <img  class="project-grid-item-img" src="./static/images/screenshot.png" alt="Animal Crossing Gallery"/>
                     <div class="overlay">
                       <div class="overlay-text">Animal Crossing Gallery</div>
                     </div>
                   </a>
-                </div>
               </div>
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">
-                <div class="proj-container">
+              <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
                   <a href="./pages/Code/twitterbookmarks.html">
                     <img  class="project-grid-item-img" src="./static/images/screenshot3.png" alt="Twitter Bookmarks"/>
                     <div class="overlay">
                       <div class="overlay-text">Twitter Bookmarks</div>
                     </div>
                   </a>
-                </div>
               </div>
-              <!-- <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">
+              <!-- <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
                 <div class="proj-container">
                   <a href="./pages/Code/instagrambookmarks.html">
                     <img  class="project-grid-item-img" src="./static/images/screenshot8.png" alt="Instagram Bookmarks"/>
@@ -117,71 +119,63 @@
                   </a>
                 </div>
               </div> -->
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">
-                <div class="proj-container">
+              <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
                   <a href="./pages/Code/carrdrecreation.html">
                     <img  class="project-grid-item-img" src="./static/images/screenshot4.png" alt="Carrd Recreation"/>
                     <div class="overlay">
                       <div class="overlay-text">Carrd Reacreation</div>
                     </div>
                   </a>
-                </div>
               </div>
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">
-                <div class="proj-container">
+              <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
+                <a href="./pages/Code/carrdrecreation2.html">
+                  <img  class="project-grid-item-img" src="./static/images/screenshot5.png" alt="Carrd Recreation"/>
+                  <div class="overlay">
+                    <div class="overlay-text">Carrd Reacreation 2</div>
+                  </div>
+                </a>
+            </div>
+              <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
                   <a href="./pages/Code/javablockchain.html">
                     <img  class="project-grid-item-img" src="./static/images/screenshot7.png" alt="Java Blockchain"/>
                     <div class="overlay">
                       <div class="overlay-text">Java Blockchain</div>
                     </div>
                   </a>
-                </div>
               </div>
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">
-                <div class="proj-container">
+              <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
                   <a href="https://github.com/bizbunny/FinalProject_SE450">
                     <img  class="project-grid-item-img" src="./static/images/450Sscreenshot.PNG" alt="Understand OOP with paint app"/>
                     <div class="overlay">
                       <div class="overlay-text">Paint Application</div>
                     </div>
                   </a>
-                </div>
               </div>
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">
-                <div class="proj-container">
+              <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
                   <a href="./pages/Code/spiderwitch.html">
                     <img class="project-grid-item-img" src="https://img.itch.zone/aW1hZ2UvNzI5NTQ5LzQwNTM4NjkuanBn/original/XXH8S5.jpg" alt="Spider Witch"/>
                     <div class="overlay">
                       <div class="overlay-text">Spider Witch</div>
                     </div>
                   </a>
-                </div>
               </div>
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">                
-                <div class="proj-container">
+              <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
                   <a href="./pages/Code/annoytheduck.html">
                     <img class="project-grid-item-img" src="https://img.itch.zone/aW1hZ2UvNzQ3NDQ5LzQyMDg5ODAuanBn/original/1W%2B2c%2B.jpg" alt="Annoy the Duck" />
                     <div class="overlay">
                       <div class="overlay-text">Annoy the Duck</div>
                     </div>
                   </a>
-                </div>
               </div>
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">
-                <div class="proj-container">
+              <div id="project-grid-item" class="box filter code name col-lg-6 col-md-6 mb-12 mb-md-0">
                   <a href="./pages/Code/codepen.html">
                     <img  class="project-grid-item-img" src="./static/images/screenshot6.png" alt="Codepen Experiments"/>
                     <div class="overlay">
                       <div class="overlay-text">Codepen Experiments</div>
                     </div>
                   </a>
-                </div>
               </div><!--project-grid-item-->
-            </div><!--div row-->
-            <h3>UX</h3>
-            <div class="row">
-              <div id="UX"></div><!--Bookmark-->
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">
+              <div id="project-grid-item" class="box filter ux name col-lg-6 col-md-6 mb-12 mb-md-0">
                 <div class="proj-container">
                   <a href="./pages/UX/rouynnoranda.html">
                     <img class="project-grid-item-img" src="./static/images/pexels-picjumbo-com-55570-196644.jpg"
@@ -192,11 +186,7 @@
                   </a>
                 </div>
               </div>
-            </div><!--div row-->
-            <h3>Art</h3>
-            <div class="row">
-              <div id="characterart"></div><!--Bookmark-->
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">                
+              <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">                
                 <div class="proj-container">
                   <a href="./pages/Art/sophie.html">
                     <img class="project-grid-item-img" src="https://pbs.twimg.com/media/FVVw-QXWUAAVCW0?format=jpg&name=4096x4096" alt="Sophie Cyclops "/>
@@ -206,7 +196,7 @@
                   </a>
                 </div>
               </div>
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">                
+              <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">                
                 <div class="proj-container">
                   <a href="./pages/Art/CatsEye.html">
                     <img class="project-grid-item-img" src="./static/images/Makoto Cat Eyes.png" alt="Cat's Eye"/>
@@ -216,7 +206,7 @@
                   </a>
                 </div>
               </div>
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">                
+              <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">                
                 <div class="proj-container">
                   <a href="./pages/Art/alien.html">
                     <img class="project-grid-item-img" src="https://pbs.twimg.com/media/Ex8KylgW8AIY_Eo?format=jpg&name=large" alt="Alien Queen"/>
@@ -225,11 +215,8 @@
                     </div>
                   </a>
                 </div><!--project-container-->
-              </div><!--project-grid-item-->  
-            </div><!--div row-->
-            <div class="row">
-              <div id="Illustration"></div><!--Bookmark-->
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">                
+              </div><!--project-grid-item-->
+              <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">                
                 <div class="proj-container">
                   <a href="./pages/Art/storm.html">
                     <img class="project-grid-item-img" src="./static/images/Storm/StormGala.png" alt="Storm"/>
@@ -239,7 +226,7 @@
                   </a>
                 </div>
               </div>
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">                
+              <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">                
                 <div class="proj-container">
                   <a href="./pages/Art/vectorart.html">
                     <img class="project-grid-item-img" src="https://pbs.twimg.com/media/FO3aybVXwAQfx6S?format=jpg&name=medium" alt="Vector Art"/>
@@ -249,7 +236,7 @@
                   </a>
                 </div>
               </div><!--project-grid-item-->
-              <div id="project-grid-item" class="col-lg-6 col-md-6 mb-12 mb-md-0">                
+              <div id="project-grid-item" class="box filter art name col-lg-6 col-md-6 mb-12 mb-md-0">                
                 <div class="proj-container">
                   <a href="./pages/Art/miscellaneousart.html">
                     <img class="project-grid-item-img" src="https://pbs.twimg.com/media/FWri9xFXEAIVjXu?format=jpg&name=4096x4096" alt="Miscellaneous Art"/>
@@ -262,20 +249,24 @@
             </div><!--div row-->
           </div><!--div project-grid-->
           <!--END OF Project Grid-->
-    </div>
+        </div>
     <!--Content-->
     <div class="footer">
       <img class="float-right" src="./static/images/sticky-footer.png" width="10%"/>
     </div>
     <!--BootStrap-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!--Other JS-->
-    <script src="JSfiles/parallax.js"></script>
-    <script src="jsfiles/typingAnimation.js"></script>
-    <!-- <script src="jsfiles/loader.js"></script> -->
-    <!--For Nav-->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--BootStrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="./jsfiles/animationSort.js"></script>
+    <script src="jsfiles/movement.js"></script>
+    <script src="jsfiles/typingAnimation.js"></script>
+    <script src="jsfiles/darkmode.js"></script>
+    
   </body>
 </html>

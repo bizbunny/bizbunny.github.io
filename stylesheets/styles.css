@@ -1,18 +1,21 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /*------------------------------header related section------------------------------*/
 .brandlogo {
   width: 135px;
   border-radius: 50%;
   margin: 0 0 0 0;
-  /*box-shadow: 4px 4px 20px rgb(211, 202, 202);*/
-}
+  /*box-shadow: 4px 4px 20px rgb(211, 202, 202);*/ }
+
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25vh;
-  margin-bottom: 25vh;
-}
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  width: 100%;
+  background-color: #ffad66; }
+
 /*------------------------------END of header related section------------------------------*/
 /*------------------------------parallaxing section------------------------------*/
 .smolbackground {
@@ -22,114 +25,60 @@
   right: 100;
   bottom: 1;
   left: 100;
-  z-index: -1;
-}
+  z-index: -1; }
+
 .rotating {
   text-align: center;
-  transition: inherit;
-}
+  transition: inherit; }
+
 /*------------------------------END of parallaxing section------------------------------*/
 /*------------------------------nav section------------------------------*/
 .navbar {
   background-color: #ffad66;
   margin: 0 0;
   padding: 1em 1em;
-  border: none;
-}
+  border: none; }
+
 .nav {
-  padding: 0 4rem;
-}
+  padding: 0 4rem; }
+
 .navbar-brand {
-  font-size: 2ch;
-}
+  font-size: 2ch; }
+
 .active li {
   background-color: #f0aa7b;
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
+
 /*------------------------------end of nav section------------------------------*/
-/*------------------------PROJECT GRID SECTION---------------------------------*/
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #f0aa7b;
-}
-.overlay-text {
-  color: #ffffff;
-  font-size: 2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-#project-grid {
-  margin: 5rem 0rem;
-}
-#project-grid-item {
-  background-color: #e5c0b7;
-  height: 36rem;
-  width: 50%;
-  padding: 0 0;
-}
-#project-grid-item:hover .overlay {
-  opacity: 0.75;
-  transform: scale(1.25);
-}
-.project-grid-item-img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  transition: transform 2s;
-}
-/* .project-grid-item-img:hover{
-  transform: scale(1.15);
-} */
-.proj-container {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
-}
-/*-------------------------END OF PROJECT GRID SECTION--------------------------------*/
 /*----------------------DROP DOWN Stuff------------------------------*/
 .dropdown-menu {
   background-color: #ffead7;
-  border-style: none;
-}
+  border-style: none; }
+
 .dropdown-item {
-  display: block;
-}
+  display: block; }
+
 .dropdown-item-active {
-  background-color: #e88f3e;
-}
+  background-color: #e88f3e; }
+
 /*----------------------DROP DOWN Stuff END------------------------------*/
 body {
   overflow-x: hidden;
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
-  background: #ffead7;
-}
-p{
-  margin: 1em;
-}
+  background: #ffead7; }
+
+p {
+  margin: 1em; }
+
 h3, h4, h5 {
   text-align: center;
-  margin: 1em 0;
-}
-ul>li {
-  margin-left: 2.5em;
-}
+  margin: 1em 0; }
+
+ul > li {
+  margin-left: 2.5em; }
+
 .regBtn {
   background-color: #ffbf83;
   color: white;
@@ -139,101 +88,90 @@ ul>li {
   display: inline-flex;
   font-size: 16px;
   border-radius: 10px;
-  margin: 5vh 0;
-}
+  margin: 5vh 0; }
+
 .align-center {
-  text-align: center;
-}
+  text-align: center; }
+
 .paragraphPositioning {
-  margin: 120px 30px;
-}
-.tab{
-  margin-left: 2.5em;
-}
-.compactList{
-  list-style: none;
-}
+  margin: 120px 30px; }
+
+.tab {
+  margin-left: 2.5em; }
+
+.compactList {
+  list-style: none; }
+
 /*----------------------CV and Resumé Stuff------------------------------*/
 #cv {
   /* width: 90rem; */
   margin: auto auto;
-  padding: auto auto;
-}
+  padding: auto auto; }
+
 #work-xp,
 #projects {
-  font-size: medium;
-}
+  font-size: medium; }
+
 hr.divider {
   border-top: 1px solid black;
   border-bottom: 0px;
   width: 75%;
-  margin: 40px auto;
-}
+  margin: 40px auto; }
+
 /*----------------------END OF CV and Resumé Stuff------------------------------*/
 /*----------------------Snap Shot Stuff------------------------------*/
 .snapshot_placing {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
+
 .snapshot {
   border-radius: 10px;
   width: 350px;
   height: 350px;
   object-fit: cover;
-  margin: 0 10px;
-}
+  margin: 0 10px; }
+
 .snapshot:hover {
-  opacity: 0.7;
-}
+  opacity: 0.7; }
+
 /*----------------------END OF Snap Shot Stuff------------------------------*/
 /*----------------------Profile Image Stuff------------------------------*/
 .profileImage {
   border-radius: 20px;
   margin-top: 40px;
-  width: 350px;
-}
+  width: 350px; }
+
 .profileImagePosition {
-  text-align: center;
-}
+  text-align: center; }
+
 /*----------------------END OF Profile Image Stuff------------------------------*/
 /*----------------------Table Stuff------------------------------*/
-
 .table-fixed {
   width: 100%;
-  height: 100%;
-  background-color: #f3f3f3;
-  height: 500px;
-  overflow-y: auto;
-  width: 100%;
-  
-  table,
-  tr,
-  td,
-  th {
-    display: block;
-    border-collapse: collapse;
+  background-color: #f3f3f3;}
+  .table-fixed table,
+  .table-fixed tr,
+  .table-fixed td,
+  .table-fixed th {
     float: center;
-    border-color: #f3f3f3;
-  }
-}
-.discover{
-  background-color: #b2e0f9;
-}
-.municipal{
-  background-color: #deb2f9;
-}
-.citizen{
-  background-color: #f8b1de;
-}
-.culture{
-  background-color: #b3f6c0;
-}
-.economics{
-  background-color: #e4e0e0;
-}
+    border-color: #f3f3f3; }
+
+.discover {
+  background-color: #b2e0f9; }
+
+.municipal {
+  background-color: #deb2f9; }
+
+.citizen {
+  background-color: #f8b1de; }
+
+.culture {
+  background-color: #b3f6c0; }
+
+.economics {
+  background-color: #e4e0e0; }
+
 /*----------------------Table Stuff------------------------------*/
 @media screen and (max-width: 1024px) {
   .profileImage {
-    margin-top: 4em;
-  }
-}
+    margin-top: 4em; } }

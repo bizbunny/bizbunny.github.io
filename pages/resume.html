@@ -26,46 +26,47 @@
     <title>Vi-Anh Nguyen Portfolio</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-sm navbar-dark">
-        <!-- <a class="navbar-brand active" aria-current="page" href="./index.html">Home</a> -->
+    <nav class="navbar navbar-expand-sm navbar-dark" id="primary_nav_wrap">
+      <div class="container-fluid">  
+      <!-- <a class="navbar-brand active" aria-current="page" href="./index.html">Home</a> -->
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav w-100">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
+          <ul class="button-list navbar-nav w-100">
+            <li class="button  nav-item" data-filter="all"><div type="button" class="Btn" name="all" title="All">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a></div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#Code">Code</a>
+            <li class="button nav-item" data-filter="code"><div type="button" class="Btn" name="code" title="Code" >
+              <a class="nav-link" href="../index.html">Code</a></div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#UX">UX</a>
+            <li class="button nav-item" data-filter="ux"><div type="button" class="Btn" name="ux" title="UX">
+              <a class="nav-link" href="../index.html">UX</a></div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" 
-                 id="navbarDropdownMenuLink" role="button" 
-                 data-toggle="dropdown" aria-expanded="false">Art</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li>
-                  <a class="dropdown-item" href="../index.html#characterart">Character Art</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../index.html#Illustration">Illustration</a>
-                </li>
-              </ul>
+            <li class="button nav-item" data-filter="art"><div type="button" class="Btn" name="art" title="Art">
+              <a class="nav-link" href="../index.html">Art</a></div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./about.html">About</a>
+            <li class="button nav-item">
+              <a class="nav-link" href="./about.html">About</a>
             </li>
-            <li class="nav-item dropdown ml-auto">
+            <li class="button active nav-item">
               <a class="nav-link active"  href="./resume.html">
                 Resumé
               </a>           
             </li>
+            <!-- <li class="button nav-item ml-auto">
+              <ul class="navbar-nav">
+                <li onclick="toggleBG()">
+                  <button class="toggleClass" id="togglemodebtn"><a href="#">Dark Mode</a>
+                  </button>             
+                  </li>
+              </ul>
+            </li> -->
           </ul>
         </div>
+      </div>
     </nav>
+
 
     </nav>
       <!--Content-->
@@ -73,7 +74,7 @@
           <div class="header">
             <div class="smolbackground"></div>
             <div class="rotating">
-              <img src="./static/images/bunnyLogoUPDATED.jpeg"
+              <img src="../static/images/bunnyLogoUPDATED.jpeg"
                 class="brandlogo" alt="logo">
                 <h1><b>Vi-Anh Nguyen</b></h1>
                 <div class="container-animation">
@@ -87,6 +88,19 @@
             </div><!--End of rotating-->
           </div><!--End of header-->
           <!--END OF Header stuff-->
+          <svg id="enx1SpitGw91" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 96 199.207161)" fill="#ffad66" stroke-width="0"/>
+            <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 863.999998 199.207161)" fill="#ffad66" stroke-width="0"/>
+            <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 1439.999997 199.207161)" fill="#ffad66" stroke-width="0"/>
+            <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 1631.999997 199.207161)" fill="#ffad66" stroke-width="0"/>
+            <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 1823.999997 199.207161)" fill="#ffad66" stroke-width="0"/>
+            <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 1247.999997 199.207161)" fill="#ffad66" stroke-width="0"/>
+            <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 1055.999997 199.207161)" fill="#ffad66" stroke-width="0"/>
+            <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 287.999999 199.207161)" fill="#ffad66" stroke-width="0"/>
+            <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 671.999999 199.207161)" fill="#ffad66" stroke-width="0"/>
+            <ellipse rx="151.659487" ry="96" transform="matrix(.632997 0 0 1 479.999999 199.207161)" fill="#ffad66" stroke-width="0"/>
+            <rect width="1708.592232" height="137.549311" rx="0" ry="0" transform="matrix(1.123732 0 0 1.454024 0.000001 0.000007)" fill="#ffad66" stroke-width="0"/>
+       </svg>
           <h3>CV</h3>
 
           <!--CV STUFF-->
@@ -97,13 +111,13 @@
                 <h5>Skills</h5>
                 <div class="paragraphPositioning">
                   <h6>
-                    <b>Primary</b>: HTML, CSS, SQL, React.js, Gatsby, Java, Python, C#, Microsoft Word, Microsoft Powerpoint
+                    <b>Code</b>: ReactJS | Gatsby | HTML5 | CSS3 | Javascript | Java | C# | Bootstrap | Python | SQL | Node.JS
                   </h6>
                   <h6>
-                    <b>Design</b>: Adobe Photoshop, Adobe Illustrator
+                    <b>Design</b>: Figma | Axure | Adobe Illustrator | Adobe Photoshop
                   </h6>
                   <h6>
-                    <b>Language</b>: French Fluency,Vietnamese Fluency
+                    <b>Miscellaneous</b>: French Fluency | Git | Microsoft Excel | Microsoft Word
                   </h6>
                 </div><!--<div class="paragraphPositioning">-->
               </div><!--<div id="skills">-->
@@ -120,10 +134,10 @@
                       Web Developer / Web Designer | MAR 2023 - JUN 2023
                     </h6>
                     <ul>
-                      <li>Implemented responsive design principles to optimize website performance on various devices; enhanced user experience
-                      and boosted mobile conversion rates by 10% through streamlined interface design and mobile-friendly features.</li>
-                      <li>Revitalized website design and functionality using WordPress, resulting in a significant increase in user engagement and
-                      a decrease in bounce rate.</li>
+                      <li>Implemented responsive design principles to optimize website performance on various devices; enhanced user experience 
+                        and boosted mobile conversion rates by 10% through streamlined interface design and mobile-friendly features.</li>
+                      <li>Revitalized website design and functionality using WordPress, resulting in a significant increase in user engagement 
+                        and a decrease in bounce rate.</li>
                       <li>Researched current design trends in competitor websites to evaluate best practices in usability optimization.</li>
                     </ul>
                   </div>
@@ -133,8 +147,8 @@
                         Remote Frontend Developer | JAN 2021 - JUN 2021
                     </h6>
                     <ul>
-                        <li>Revamped application pages to align with updated supervisor requirements, collaborating closely with the UX team;
-                        enhancements resulted in a 20% decrease in user bounce rate and a 15% increase in user engagement metrics.</li>
+                        <li>Revamped application pages to align with updated supervisor requirements, collaborating closely with the UX team; 
+                          enhancements resulted in a 20% decrease in user bounce rate and a 15% increase in user engagement metrics.</li>
                         <li>Optimized UX design with web standards compliant coding to ensure proper formatting across browsers.</li>
                         <li>Prepared and implemented website components, including ReactJS, CSS and JavaScript for a user-friendly interface.</li>
                     </ul>
@@ -145,8 +159,8 @@
                       Volunteer | SEPT 2019 - JAN 2020
                     </h6>
                     <ul>
-                      <li>Assist workers in needed facilities for monthly programs</li>
-                      <li>Help ensure kids and families have a great experience at the museum</li>
+                      <li>Facilitated arts and crafts activities for children, contributing to a 10% increase in positive feedback from visitors 
+                        about their overall experience at the museum.</li>
                     </ul>
                   </div>
                   <div id="Uniqlo">
@@ -157,8 +171,7 @@
                     <ul>
                       <li>Optimized store presentation by rearranging merchandise displays to drive customer engagement and increase sales.</li>
                       <li>Provided exceptional customer service through resolving inquiries & complaints within receipt.</li>
-                      <li>Integrated new merchandise displays by unpacking, assembling, and positioning products according to promotional themes
-                      or seasonal trends.</li>
+                      <li>Sorted merchandise from racks, placed them in their correct location,</li>
                     </ul>
                   </div>
                   <div id="HappyMercs">
@@ -179,9 +192,10 @@
                       Sales Associate JUN 2015 - DEC 2017
                     </h6>
                     <ul>
-                      <li>Greet Customers</li>
-                      <li>Assisted in maintenance of inventory and stock</li>
-                      <li>Helped manage appearance of store</li>
+                      <li>Maintained a 90% customer satisfaction rating by greeting customers daily with a warm smile, professional demeanor, 
+                        and a focus on providing excellent customer service.</li>
+                      <li>Utilized strong inventory management skills to restock shelves 2 times faster than the average employee.</li>
+                      <li>Contributed to a positive shopping experience by executing daily restocking procedures that minimized out-of-stock situations.</li>
                     </ul>
                   </div>
                 </div><!--<div class="paragraphPositioning">-->
