@@ -15,3 +15,16 @@ $(document).ready(function(){
         })
     })
   })
+  function loadHeader() {
+    fetch("../pages/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        // Re-initialize any scripts that need to run after header loads
+        if(typeof initHeaderScripts === 'function') {
+          initHeaderScripts();
+        }
+      });
+  }
+  
+  document.addEventListener('DOMContentLoaded', loadHeader);
