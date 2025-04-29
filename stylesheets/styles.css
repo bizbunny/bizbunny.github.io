@@ -49,7 +49,20 @@
   background-color: #f0aa7b;
   display: flex;
   justify-content: center; }
+/* Active state for navigation items */
+.nav-item.active .nav-link,
+.button.active .nav-link {
+  color: white !important;
+  background-color: #f0aa7b;
+  /* Your highlight color */
+  border-radius: 4px;
+}
 
+/* Ensure hover states are consistent */
+.nav-item .nav-link:hover,
+.button .nav-link:hover {
+  color: #ffad66 !important;
+}
 /*------------------------------end of nav section------------------------------*/
 /*----------------------DROP DOWN Stuff------------------------------*/
 .dropdown-menu {

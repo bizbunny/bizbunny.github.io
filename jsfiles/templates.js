@@ -18,6 +18,29 @@ function loadHeader() {
   
   document.addEventListener('DOMContentLoaded', loadHeader);
   function initHeaderScripts() {
+    // Check if we're on the index page with a filter
+    const currentPage = window.location.pathname;
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlFilter = urlParams.get('filter');
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+        if (link.getAttribute('href').split('?')[0] === currentPage) {
+            link.classList.add('active');
+            link.closest('.nav-item').classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+
+    // Highlight the correct nav item
+    if (currentPage === '/index.html' && urlFilter) {
+        document.querySelectorAll('.button').forEach(button => {
+            if (button.getAttribute('data-filter') === urlFilter) {
+                button.classList.add('active');
+            }
+        });
+    }
+    
     //TYPING ANIMATION
     function typing_animation() {
         let text_element = document.querySelector(".text-anim");

@@ -5,23 +5,36 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="button-list navbar-nav w-100">
-          <li class="button active nav-item" data-filter="all"><div type="button" class="Btn" name="all" title="All">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a></div>
+          <!-- Home Link -->
+          <li class="button nav-item" data-filter="all">
+            <div type="button" class="Btn" name="all" title="All">
+              <a class="nav-link" href="/index.html">Home</a>
+            </div>
           </li>
-          <li class="button nav-item" data-filter="code"><div type="button" class="Btn" name="code" title="Code" >
-            <a class="nav-link" href="#">Code</a></div>
+          <!-- Code Link -->
+          <li class="button nav-item" data-filter="code">
+            <div type="button" class="Btn" name="code" title="Code">
+              <a class="nav-link" href="/index.html?filter=code" onclick="location.reload()">Code</a>
+            </div>
           </li>
-          <li class="button nav-item" data-filter="art"><div type="button" class="Btn" name="art" title="Art">
-            <a class="nav-link" href="#">Art</a></div>
+          <!-- Art Link -->
+          <li class="button nav-item" data-filter="art">
+            <div type="button" class="Btn" name="art" title="Art">
+              <a class="nav-link" href="/index.html?filter=art" onclick="location.reload()">Art</a>
+            </div>
           </li>
-          <li class="button nav-item" data-filter="ux"><div type="button" class="Btn" name="ux" title="UX">
-            <a class="nav-link" href="#">UX</a></div>
+          <!-- UX Link -->
+          <li class="button nav-item" data-filter="ux">
+            <div type="button" class="Btn" name="ux" title="UX">
+              <a class="nav-link" href="/index.html?filter=ux" onclick="location.reload()">UX</a>
+            </div>
+          </li>
+          <!-- About and Resume Link -->
+          <li class="button nav-item">
+            <a class="nav-link" href="/pages/about.html">About</a>
           </li>
           <li class="button nav-item">
-            <a class="nav-link" href="../pages/about.html">About</a>
-          </li>
-          <li class="button nav-item">
-            <a class="nav-link" href="../pages/resume.html">Resumé</a>           
+            <a class="nav-link" href="/pages/resume.html" id="resume-link">Resumé</a>
           </li>
         </ul>
       </div>
