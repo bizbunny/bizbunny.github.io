@@ -46,22 +46,20 @@
   font-size: 2ch; }
 
 .active li {
-  background-color: #f0aa7b;
+  /* background-color: #f0aa7b; */
   display: flex;
   justify-content: center; }
-/* Active state for navigation items */
-.nav-item.active .nav-link,
-.button.active .nav-link {
+/* Active state styling */
+.nav-item.active .nav-link {
   color: white !important;
   background-color: #f0aa7b;
-  /* Your highlight color */
   border-radius: 4px;
 }
 
-/* Ensure hover states are consistent */
-.nav-item .nav-link:hover,
-.button .nav-link:hover {
-  color: #ffad66 !important;
+/* Default state styling */
+.nav-item:not(.active) .nav-link {
+  color: inherit;
+  background-color: transparent;
 }
 /*------------------------------end of nav section------------------------------*/
 /*----------------------DROP DOWN Stuff------------------------------*/

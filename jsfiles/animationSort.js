@@ -3,47 +3,58 @@ $(document).ready(function(){
     const urlParams = new URLSearchParams(window.location.search);
     const urlFilter = urlParams.get('filter');
 
-    // If URL has a filter, apply it immediately
+    // Set initial active state
+    updateActiveStates(urlFilter || 'all');
+    
+    // Apply initial filter if specified
     if (urlFilter) {
         applyFilter(urlFilter);
-        highlightActiveNav(urlFilter);
     }
 
-    // When clicking filter buttons
-    $(".button").click(function(){
+    // Handle filter button clicks
+    $(".nav-item[data-filter]").click(function(e) {
+        e.preventDefault();
         const filterValue = $(this).attr("data-filter");
         
-        // Skip if already active
-        if ($(this).hasClass('active')) return;
-
-        applyFilter(filterValue);
-        highlightActiveNav(filterValue);
+        // Update URL
+        const newUrl = filterValue === 'all' 
+            ? '/index.html' 
+            : `/index.html?filter=${filterValue}`;
+        history.pushState(null, null, newUrl);
         
-        // Update URL (without reloading)
-        history.pushState(null, null, `?filter=${filterValue}`);
+        // Apply filter and update active states
+        applyFilter(filterValue);
+        updateActiveStates(filterValue);
     });
-    
-    // Apply filter to project grid
-    function applyFilter(filterValue) {
-        if (filterValue === "all") {
-            $(".filter").slideDown("1000");
-        } else {
-            $(".filter").not(`.${filterValue}`).slideUp("1000");
-            $(`.filter.${filterValue}`).slideDown("1000");
-        }
-    }
 
-    // Highlight the active nav item
-    function highlightActiveNav(filterValue) {
-        $(".button").removeClass('active');
-        $(`.button[data-filter="${filterValue}"]`).addClass('active');
-    }
-
-    // Handle browser back/forward navigation
+    // Handle browser navigation (back/forward)
     window.addEventListener('popstate', function() {
         const newParams = new URLSearchParams(window.location.search);
         const newFilter = newParams.get('filter') || 'all';
         applyFilter(newFilter);
-        highlightActiveNav(newFilter);
+        updateActiveStates(newFilter);
     });
+
+    // Filter function
+    function applyFilter(filterValue) {
+        if (filterValue === "all") {
+            $(".filter").slideDown("fast");
+        } else {
+            $(".filter").not(`.${filterValue}`).slideUp("fast");
+            $(`.filter.${filterValue}`).slideDown("fast");
+        }
+    }
+
+    // Update active navigation states
+    function updateActiveStates(activeFilter) {
+        // Remove active class from all nav items
+        $(".nav-item").removeClass('active');
+        
+        // Add active class to the correct item
+        if (activeFilter === 'all') {
+            $('.nav-item[data-filter="all"]').addClass('active');
+        } else {
+            $(`.nav-item[data-filter="${activeFilter}"]`).addClass('active');
+        }
+    }
 });
