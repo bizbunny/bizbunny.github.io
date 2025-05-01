@@ -1,8 +1,8 @@
-$(document).ready(function(){
-    // Get filter from URL (e.g., ?filter=code)
+$(document).ready(function() {
+    // Get filter from URL
     const urlParams = new URLSearchParams(window.location.search);
     const urlFilter = urlParams.get('filter');
-
+  
     // Set initial active state
     updateActiveStates(urlFilter || 'all');
     
@@ -10,13 +10,13 @@ $(document).ready(function(){
     if (urlFilter) {
         applyFilter(urlFilter);
     }
-
+  
     // Handle filter button clicks
     $(".nav-item[data-filter]").click(function(e) {
         e.preventDefault();
         const filterValue = $(this).attr("data-filter");
         
-        // Update URL
+        // Update URL without page reload
         const newUrl = filterValue === 'all' 
             ? '/index.html' 
             : `/index.html?filter=${filterValue}`;
@@ -26,35 +26,50 @@ $(document).ready(function(){
         applyFilter(filterValue);
         updateActiveStates(filterValue);
     });
-
-    // Handle browser navigation (back/forward)
+  
+    // Handle browser navigation
     window.addEventListener('popstate', function() {
         const newParams = new URLSearchParams(window.location.search);
         const newFilter = newParams.get('filter') || 'all';
         applyFilter(newFilter);
         updateActiveStates(newFilter);
     });
-
-    // Filter function
+  
+    //filter function with immediate reordering
     function applyFilter(filterValue) {
+        // Disable transitions temporarily
+        $(".filter").css('transition', 'none');
+        
+        // Hide all items first
+        $(".filter").hide();
+        
         if (filterValue === "all") {
-            $(".filter").slideDown("fast");
+            $(".filter").show();
         } else {
-            $(".filter").not(`.${filterValue}`).slideUp("fast");
-            $(`.filter.${filterValue}`).slideDown("fast");
+            $(`.filter.${filterValue}`).show();
         }
+        
+        // Reorder items without animation
+        reorderGrid();
+        
+        // Re-enable transitions after a small delay
+        setTimeout(() => {
+            $(".filter").css('transition', '');
+        }, 10);
     }
-
+    
+    //grid reordering function
+    function reorderGrid() {
+        const $grid = $("#project-grid .row");
+        const $visibleItems = $grid.find(".filter:visible").detach();
+        
+        // Reattach visible items in original order
+        $grid.append($visibleItems);
+    }
+  
     // Update active navigation states
     function updateActiveStates(activeFilter) {
-        // Remove active class from all nav items
         $(".nav-item").removeClass('active');
-        
-        // Add active class to the correct item
-        if (activeFilter === 'all') {
-            $('.nav-item[data-filter="all"]').addClass('active');
-        } else {
-            $(`.nav-item[data-filter="${activeFilter}"]`).addClass('active');
-        }
+        $(`.nav-item[data-filter="${activeFilter}"]`).addClass('active');
     }
-});
+  });
