@@ -41,12 +41,12 @@ $(document).ready(function() {
         $(".filter").css('transition', 'none');
         
         // Hide all items first
-        $(".filter").hide();
+        $(".filter").slideUp();
         
         if (filterValue === "all") {
-            $(".filter").show();
+            $(".filter").slideDown();
         } else {
-            $(`.filter.${filterValue}`).show();
+            $(`.filter.${filterValue}`).slideDown();
         }
         
         // Reorder items without animation
