@@ -27,6 +27,10 @@ $(document).ready(function() {
         updateActiveStates(filterValue);
     });
   
+    // Scroll to top smoothly to prevent jump
+    $('html, body').animate({scrollTop: 0}, 200);
+});
+
     // Handle browser navigation
     window.addEventListener('popstate', function() {
         const newParams = new URLSearchParams(window.location.search);
@@ -38,15 +42,18 @@ $(document).ready(function() {
     //filter function with immediate reordering
     function applyFilter(filterValue) {
         // Disable transitions temporarily
-        $(".filter").css('transition', 'none');
+        $(".filter").css(
+            'transition',
+            'none' // Hide all immediately
+        );
         
         // Hide all items first
-        $(".filter").slideUp();
+        $(".filter").hide();
         
         if (filterValue === "all") {
-            $(".filter").slideDown();
+            $(".filter").show();
         } else {
-            $(`.filter.${filterValue}`).slideDown();
+            $(`.filter.${filterValue}`).show();
         }
         
         // Reorder items without animation

@@ -12,7 +12,6 @@ function loadHeader() {
       })
       .catch(error => {
         console.error("Error loading header:", error);
-        // Optionally show a fallback header
       });
 }
   
