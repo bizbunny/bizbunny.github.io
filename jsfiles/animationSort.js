@@ -79,4 +79,4 @@ $(document).ready(function() {
         $(".nav-item").removeClass('active');
         $(`.nav-item[data-filter="${activeFilter}"]`).addClass('active');
     }
-  });
+  //});
