@@ -42,18 +42,15 @@ $(document).ready(function() {
     //filter function with immediate reordering
     function applyFilter(filterValue) {
         // Disable transitions temporarily
-        $(".filter").css(
-            'transition',
-            'none' // Hide all immediately
-        );
+        $(".filter").css('transition', 'none');
         
         // Hide all items first
-        $(".filter").hide();
+        $(".filter").slideUp(); // lowercase
         
         if (filterValue === "all") {
-            $(".filter").show();
+            $(".filter").slideDown(); // lowercase
         } else {
-            $(`.filter.${filterValue}`).show();
+            $(`.filter.${filterValue}`).slideDown(); // lowercase
         }
         
         // Reorder items without animation

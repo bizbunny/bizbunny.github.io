@@ -34,7 +34,7 @@
   min-height: calc(100vh - 200px);
 }
 
-#project-grid-item {
+.project-grid-item {
   width: 50%; /* Ensure consistent sizing */
   height: 36rem;
   margin: 0;
@@ -44,7 +44,7 @@
   display: none; /* Start hidden by default */
 }
 
-#project-grid-item:hover .overlay {
+.project-grid-item:hover .overlay {
   opacity: 0.75;
   transform: scale(1.25); }
 
@@ -54,7 +54,7 @@
   width: 100%;
   transition: transform 2s; }
 /* Show only when filtered */
-#project-grid-item.filter {
+.project-grid-item.filter {
   display: block;
 }
 /* .project-grid-item-img:hover{

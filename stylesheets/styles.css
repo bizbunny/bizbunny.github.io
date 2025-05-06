@@ -58,7 +58,7 @@ html {
 /* Active state styling */
 .nav-item.active .nav-link {
   color: white !important;
-  background-color: #f0aa7b;
+  background-color: #ffad66;
   border-radius: 4px;
 }
 
