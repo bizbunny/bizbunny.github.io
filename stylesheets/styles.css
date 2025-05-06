@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.filter {
+  transition: none !important;
+}
+html {
+  scroll-behavior: auto !important; /* Disable smooth scrolling */
+}
 /*------------------------------header related section------------------------------*/
 .brandlogo {
   width: 135px;
@@ -46,10 +52,21 @@
   font-size: 2ch; }
 
 .active li {
-  background-color: #f0aa7b;
+  /* background-color: #f0aa7b; */
   display: flex;
   justify-content: center; }
+/* Active state styling */
+.nav-item.active .nav-link {
+  color: white !important;
+  background-color: #ffad66;
+  border-radius: 4px;
+}
 
+/* Default state styling */
+.nav-item:not(.active) .nav-link {
+  color: inherit;
+  background-color: transparent;
+}
 /*------------------------------end of nav section------------------------------*/
 /*----------------------DROP DOWN Stuff------------------------------*/
 .dropdown-menu {
@@ -67,7 +84,9 @@ body {
   overflow-x: hidden;
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
-  background: #ffead7; }
+  background: #ffead7;
+  overflow-anchor: none;
+}
 
 p {
   margin: 1em; }
