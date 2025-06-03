@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="/jsfiles/templates.js"></script>
+    <!-- links to bootstrap CDN:
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow”
+      integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+  
+    link to bootstrap styling
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    <!--Nav Style-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Other Styles-->
+    <link href="../../stylesheets/styles.css" rel="stylesheet">
+    <link href="../../stylesheets/stylesWithTypingAnimation.css" rel="stylesheet">
+    <link href="../../stylesheets/stickyfooter.css" rel="stylesheet">
+    <title>Vi-Anh Nguyen Portfolio</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div id="header-placeholder"></div>
+        <!--Content-->
+          
+        <h3>Personal React Website</h3>
+        <div class="snapshot_placing">
+            <a href="https://github.com/bizbunny/vianhnguyen" alt="link to repo">
+                <img src="../../static/images/personalReactSite/githubSnapshot.png" class="snapshot" alt="github snapshot"/>
+            </a>
+        </div>
+        <h5>Idea</h5>
+        <p class="paragraphPositioning"> I decided to start making this website after getting inspired by this website: <a href="https://www.sharyap.com/" alt="link for website I took heavy inspiration from">link</a>. I wanted something 
+        to use as a LinkTree that could offer a bit more than just a list of links. In addition to that, I didn't want something too serious, so I took inspiration from websites and blogs designed in the early 2000's that went heavy in leaning in every part of a site into a theme of some sort. ヽ(・∀・)ﾉ </p>
+        <p>So to start off, I used Milanote to jot down ideas and create a moodboard.</p>
+        <img src="../../static/images/personalReactSite/canvas_me-website-250603_1524.png" alt="Milanote board"/>
+        <p></p>
+        <p>At that point, the todo list was made to keep my priorities in order and make sure I get the core starting tasks done:</p>
+        <ul>
+            <li>Decide on language: Vanilla html/CSS/ javascript or React</li>
+            <li>Design Wire Frame</li>
+            <li>Construct Basic Structure for website (basic files)</li>
+            <li>Decide on feature to implement</li>
+            <li>wireframe</li>
+        </ul>
+        <p>The website sharyap.com used React, so I decided to use that to help myself review it, as well as get to know more packages I wasn't familiar with like React-Draggable. How sharyap.com used this package was my biggest inspiration and motivation point on making this because I really like how  it is used on that website.</p>
+        <p>I already had the idea to have a dark mode option, so deciding on a colorscheme came pretty quick. Because the overal impression of the website was intended to be not too serious, the light mode colorscheme was chosen to have heavy use of pink with dark brown for text since I found using blacks and greys for text color seemed a bit too traditional. Dark mode colors leaned into purples and violets since that pairs well with pink.</p>
+        <p>After deciding on a general look, I would jot down ideas on what kind of layout I wanted.</p>
+        <img src="../../static/images/personalReactSite/495269022_3993129694287934_4519267630658767879_n.jpg" alt="sketches"/>
+        <p>Since the developer of sharyap.com mentioned in a video that explained the development of their website(<a href="https://www.youtube.com/watch?v=_tWh4cYCTv0" alt="sharyap youtube explanation">link</a>) that they wanted to emulate a windows on a desktop with their use of draggable windows, I wanted to do the same with the look of it. However, to defer enough, I chose to lean into using alot of pixel art since that's a style I enjoy using anyway and wanted to take inspiration from a lot of the games I play like Stardew Valley or Short Hike.</p>
+        <p>I played around a bit in draw.io to get an idea on what features I wanted and what rough idea of website navigation I wanted. What kind of architecture would I expect the information to be arranged in? This is the first draft:</p>
+        <img src="../../static/images/personalReactSite/Me Website V1 Diagram.webp" alt="user flow V1"/>
+        <p>Since this is mainly a website that is fairly self endulgent, I knew the main audience for it is basically myself, and to a certain extent, people, like my audience on social media, who want to get a better idea of who I am and what I do. Because of that, I combined the wireframe and prototyping steps into one and created a rough low fidelity prototype on Figma with some barebones features. That way, I could see what everything looks like placed and get a better idea on what it would feel like to use a website like what I had in mind: <a href="https://www.figma.com/design/6IiFYvJux0iiFaU9smm7Br/Me-Website?node-id=0-1&t=5m6CzbQM9g4lqoa0-1" alt="Figma Prototype">link</a></p>
+        <img src="../../static/images/personalReactSite/Screenshot 2025-06-03 155016.png" alt="figma"/>
+        <p>Fiddling with the prototype on my own allowed me to see what to improve upon consnering how I want the information and features of the website to be structured. So the diagram was updated:</p>
+        <img src="../../static/images/personalReactSite/Me Website V2 Diagram.webp" alt="user flow V2"/>
+        <p>To be continued...</p>
+    </div>
+    <!--Content-->
+    <div class="footer">
+      <img class="float-right" src="../../static/images/sticky-footer.png" width="10%"/>
+    </div>
+    <!--BootStrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Other JS-->
+    <!-- <script src="jsfiles/loader.js"></script> -->
+    <!--For Nav-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
