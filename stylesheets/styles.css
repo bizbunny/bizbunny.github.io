@@ -94,7 +94,7 @@ body {
 p {
   margin: 1em; }
 
-h3, h4, h5 {
+h3, h4, h5, .h6 {
   text-align: center;
   margin: 1em 0; }
 
