@@ -1,0 +1,13 @@
+.video-container .ratio{ 
+  max-width: 1000px; /* Adjust as needed for desktop */
+  margin: 0 auto; /* Centers the container */
+  padding: 0 15px; /* Adds some padding on mobile */
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .video-container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
