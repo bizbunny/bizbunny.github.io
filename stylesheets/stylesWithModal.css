@@ -1,6 +1,9 @@
 .myImages {
-  width: 33vw;
-  border-radius: 15px; }
+  width: 100%; /* Now takes full width of column */
+  border-radius: 15px;
+  margin-bottom: 15px; /* Adds space between images */
+  display: block; /* Ensures proper spacing */
+}
 
 .myMiscImages {
   width: 100%; }
@@ -82,6 +85,26 @@
   color: #bbb;
   text-decoration: none;
   cursor: pointer; }
+
+.image-crop-container {
+  width: 100%;
+  aspect-ratio: 1/1; /* Forces square shape */
+  overflow: hidden; /* Crops the image */
+  border-radius: 15px; /* Matches your other images */
+  position: relative;
+}
+
+.image-crop-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops while maintaining aspect ratio */
+  object-position: center; /* Centers the crop */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.image-crop-container:hover img {
+  transform: scale(1.05); 
+}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 800px) {

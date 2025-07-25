@@ -23,6 +23,16 @@ for (var i = 0; i < img.length; i++) {
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var carouselImages = document.querySelectorAll('.carousel-item img.myImages');
+for (var i = 0; i < carouselImages.length; i++) {
+  carouselImages[i].onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";

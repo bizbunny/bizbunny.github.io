@@ -102,16 +102,21 @@ ul > li {
   margin-left: 2.5em; }
 
 .regBtn {
+  display: inline-block;
   background-color: #ffbf83;
   color: white;
-  border: none;
   padding: 15px 32px;
   text-align: center;
-  display: inline-flex;
-  font-size: 16px;
+  text-decoration: none;
   border-radius: 10px;
-  margin: 5vh 0; }
+  margin: 5vh 0;
+}
 
+.regBtn:hover {
+  background-color: #ffad66;
+  color: white;
+  text-decoration: none;
+}
 .align-center {
   text-align: center; }
 
