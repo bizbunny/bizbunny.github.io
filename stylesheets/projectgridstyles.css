@@ -1,4 +1,7 @@
 /*------------------------PROJECT GRID SECTION---------------------------------*/
+a {
+ text-decoration: none;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -9,18 +12,23 @@
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #f0aa7b; }
+  background-color: #f0aa7b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  z-index: 1;
+}
 
 .overlay-text {
   color: #ffffff;
   font-size: 2em;
-  position: absolute;
+  text-align: center;
+  position: relative;
+  transform: none;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  -webkit-transform: none;
+  -ms-transform: none; }
 
   #project-grid {
     min-height: calc(100vh - 200px);
@@ -46,7 +54,7 @@
 
 .project-grid-item:hover .overlay {
   opacity: 0.75;
-  transform: scale(1.25); }
+  transform: scale(1.11); }
 
 .project-grid-item-img {
   object-fit: cover;
@@ -61,10 +69,69 @@
     transform: scale(1.15);
   } */
 .proj-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.proj-container div{
   height: 100%;
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px; }
+  margin-bottom: 0px;
+  background-attachment:fixed;
+  background-position: 50% 50%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
 
 /*-------------------------END OF PROJECT GRID SECTION--------------------------------*/
+/*-------------------------BG IMAGES SECTION--------------------------------*/
+#bookNotes{
+  background-image:url('../static/images/BookNotes/76C0CEA2-2F50-411A-A651-25DDFB890336.jpeg');
+  background-position: 125% center;
+}
+#egg{
+  background-image: url('https://placehold.co/600x400');
+  background-position: 150% center;
+}
+#personal{
+  background-image: url('../static/images/personalReactSite/screenshot11.png');
+  background-position: 125% center;
+}
+#gaming{
+  background-image: url('../static/images/screenshot10.png');
+}
+#acnh{
+  background-image: url('../static/images/screenshot.png');
+  background-position: 125% center;
+}
+#twitter{
+  background-image: url('../static/images/screenshot3.png');
+}
+#carrd1{
+  background-image: url('../static/images/screenshot4.png');
+  background-position: 125% center;
+}
+#carrd2{
+  background-image: url('../static/images/screenshot5.png');
+}
+#blockchain{
+  background-image: url('../static/images/screenshot7.png');
+  background-position: 125% center;
+}
+#paint{
+  background-image: url('../static/images/450Sscreenshot.PNG');
+}
+#spider{
+  background-image: url('https://img.itch.zone/aW1hZ2UvNzI5NTQ5LzQwNTM4NjkuanBn/original/XXH8S5.jpg');
+}
+#duck{
+  background-image: url('https://img.itch.zone/aW1hZ2UvNzQ3NDQ5LzQyMDg5ODAuanBn/original/1W%2B2c%2B.jpg');
+}
+#codepen{
+  background-image: url('../static/images/screenshot6.png');
+}
+#rouyn{
+  background-image: url('../static/images/pexels-picjumbo-com-55570-196644.jpg');
+}
